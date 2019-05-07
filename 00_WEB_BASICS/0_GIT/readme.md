@@ -98,6 +98,18 @@ git add (staging)  --- > git commit ----> git push
 
 ```
 
+Peform following tasks :
+
+1. Add a file `example.txt` with some text message in one line
+2. Git add/commit/push to github and check github repo. Can you see the difference in this commit. Click on commit number in github to see the difference. Checko out red and green areas. 
+3. Change `example.txt` and add a second line with some text
+4. Repeat step 2.
+5. Add another file `demo.txt` with some text and repeat step 2.
+6. Add another file `dummy.txt` with some text and repeat step 2.
+7. Remove a line from `example.txt` and repeat step 2.
+7. Check output of command `git log` command.
+
+
 # Cloning a existing project from Git 
 
 ## 1. Copying existing Project from Remote Git
@@ -107,6 +119,13 @@ if you are not making project on your local and copying an exisitng project on g
 ```
 git clone <remote-repo-address>
 ```
+Peform following tasks :
+
+1. clone the repo : `https://github.com/BlackrockDigital/startbootstrap-creative`
+2. Open the downloaded repo in VSCode editor.
+3. Run the HTTP-Server and check `http://localhost:8080` for ouput
+
+
 
 
 ## 2. Pulling changes done by other developer.
