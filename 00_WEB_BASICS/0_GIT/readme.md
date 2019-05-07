@@ -2,7 +2,7 @@
 
 Let's see how to use git to maintain all your code projects locally and on various Remote services like `GitHub`
 
-## Setup Git on your system
+## Lab Task : Setup Git on your system
 
 After installing the git command line interface. Check whether git is working by following command (In Terminal/CMD):
 
@@ -98,7 +98,7 @@ git add (staging)  --- > git commit ----> git push
 
 ```
 
-Peform following tasks :
+## Lab Task
 
 1. Add a file `example.txt` with some text message in one line
 2. Git add/commit/push to github and check github repo. Can you see the difference in this commit. Click on commit number in github to see the difference. Checko out red and green areas. 
@@ -119,7 +119,7 @@ if you are not making project on your local and copying an exisitng project on g
 ```
 git clone <remote-repo-address>
 ```
-Peform following tasks :
+## Lab Task
 
 1. clone the repo : `https://github.com/BlackrockDigital/startbootstrap-creative`
 2. Open the downloaded repo in VSCode editor.
