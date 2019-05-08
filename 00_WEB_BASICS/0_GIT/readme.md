@@ -139,3 +139,23 @@ git pull origin master
 
 ```
 
+
+# Publishing changes on your Github Hosting 
+
+If you have a repository which you can write on github (public access). If you have create a new project then `remote` wil be your github repo. However if you have cloned the repo. You will have to remove remote using `git remote remove origin` and then add new origin `git remote add origin <your-repo-name>`
+
+ Then you can make a `branch` `gh-pages`
+
+```
+git branch gh-pages
+
+```
+
+and push the changes on this branch.
+
+```
+git push origin gh-pages
+
+```
+
+Your site will be availalbe on `https://<your-username>.github.io/<your-repo-name>/`. Replace `your-username` and `your-repo-name` with appropriate values.
