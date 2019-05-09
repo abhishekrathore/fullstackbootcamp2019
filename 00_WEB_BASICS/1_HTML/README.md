@@ -83,7 +83,7 @@ Create a HTML form as shown in output. Make sure you have exact output.
 ## 7. Registration form with Values
 
 Make these changes to your form:
-* Add `name` attributes as `username`, `pass`, `email` and `age` to  input tags
+* Add `name` attributes as `username`, `pass`, `email` and `age` to  input tags. Use name `superhero` for all radio buttons and `value` as different Superhero names.
 * Add `action` attribute with value `https://hidden-ridge-64485.herokuapp.com/registration` and `method` with value `GET`
 * Submit and verify the result
 
@@ -124,7 +124,12 @@ Make these changes to this form:
 
 ![Output 8](./images/08_selfie_form.gif)
 
+# Additional Resources
 
+* HTML/CSS Basics Tutorial [Github Link](https://github.com/cassidoo/HTML-CSS-Tutorial)
+* Chrome Devtools Course [Earn a Badge Here](https://www.codeschool.com/courses/discover-devtools)
+* Mozilla Dev Docs for HTML [Link](https://developer.mozilla.org/en-US/docs/Learn/HTML)
+* Awesome Collection of Books, Tutorials and Hacks of all topics related to HTML5 [Link](https://github.com/diegocard/awesome-html5)
 
 
 

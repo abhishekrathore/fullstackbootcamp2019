@@ -142,7 +142,8 @@ git pull origin master
 
 # Publishing changes on your Github Hosting 
 
-If you have a repository which you can write on github (public access). If you have create a new project then `remote` wil be your github repo. However if you have cloned the repo. You will have to remove remote using `git remote remove origin` and then add new origin `git remote add origin <your-repo-name>`
+If you have a repository which you can write on github (public access). If you have create a new project then `remote` will be your github repo. However if you have cloned the repo. You will have to remove remote using `git remote remove origin` and then add new origin `git remote add origin <your-repo-name>`
+
 
  Then you can make a `branch` `gh-pages`
 
