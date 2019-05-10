@@ -1,6 +1,6 @@
 # BOOTSTRAP
 
-Go through Common Concepts of BootStrap :
+Go through Common Concepts of BootStrap given below :
 
 1. Basic Bootstrap Setup using npm
 2. Read About Basic Components
