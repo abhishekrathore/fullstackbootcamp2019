@@ -133,6 +133,8 @@ On hover change the opacity of list icon using `opacity` property. Make it more 
 
 # Exercise CSS Positioning
 
+Read about [CSS Flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) 
+
 
 ## 1. Draw Stars
 
