@@ -186,3 +186,4 @@ Create a new div with star image icon as above. Arrange icon in bottom right of 
 
 * CSS Learning resources [Github Link](https://github.com/micromata/awesome-css-learning#css-in-a-nutshell)
 * A curated list of awesome frameworks, style guide and other cool nuggets for the amazing CSS. [Github Link](https://github.com/awesome-css-group/awesome-css)
+* Play CSS Dine Game [Here](https://flukeout.github.io/)
