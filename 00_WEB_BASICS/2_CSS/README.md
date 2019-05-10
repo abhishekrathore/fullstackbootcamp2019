@@ -1,6 +1,6 @@
 # CSS Basics - Youstart Labs
 
-Read the Basics of CSS from slides (PDF) [Link to Slide]().
+Read the Basics of CSS from slides (PDF) [Link to Slide](../HTML_CSS.pdf).
 
 Complete the below topics and their exercises. 
 

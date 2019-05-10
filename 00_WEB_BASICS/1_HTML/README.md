@@ -1,6 +1,6 @@
 # HTML Basics - Youstart Labs
 
-Read the Basics of HTML from slides (PDF) [Link to Slide]().
+Read the Basics of HTML from slides (PDF) [Link to Slide](../HTML_CSS.pdf).
 
 Complete the below topics and their exercises. 
 
