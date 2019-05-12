@@ -517,17 +517,6 @@ person.mobile.office = 1234233;
 
 
 
-
-```
-
-
-
-
-
-
-
-```
-
     { name: 'sachin', age: 40 }
     { name: 'sachin', mobile: { home: 1213123, office: 1234233 } }
 
