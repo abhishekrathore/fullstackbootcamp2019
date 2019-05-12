@@ -6,7 +6,7 @@
 
 
 
-```
+```javascript
 var name = "abhishek";    //old style
 
 let name  = "abhishek";   //new style
@@ -21,7 +21,7 @@ In javascript except for functions no other block create a local scope for varia
 
 
 
-```
+```javascript
 if(true){
 var name  = "abhishek";
 }
@@ -32,7 +32,7 @@ console.log(name);  // var is available outside the block {}
 
 The let however limits the scope of variable
 
-```
+```javascript
 if(true){
 let name  = "abhishek";
 }
@@ -48,15 +48,8 @@ console.log(name);  // var is available outside the block {}
 
 
 
+```javascript
 
-
-
-
-
-
-
-
-```
 
 
 if(true){
@@ -89,7 +82,6 @@ let city = "mumbai";   // throws error
     ... ...
     ReferenceError: lastname is not defined
     SyntaxError: Identifier 'city' has already been declared
-    SyntaxError: Identifier 'city' has already been declared
 
 
 ## const
@@ -97,7 +89,7 @@ let city = "mumbai";   // throws error
 As name suggests const is used to declare constant values and immutable variables.
 
 
-```
+```javascript
 const name = "abhishek";
 name = "ajay";   // throws error
 
@@ -106,7 +98,7 @@ name = "ajay";   // throws error
 also for objects and arrays, you can't assign a new value. This is quite helpful knowing the array/objects should not be re-assigned mostly.
 
 
-```
+```javascript
 const person = {name:"abhishek"};
 person = {};  // throws error
 
@@ -114,7 +106,7 @@ person = {};  // throws error
 
 
 
-```
+```javascript
 
 
 const name = "abhishek";
@@ -140,7 +132,7 @@ Arrow functions are used for specially anonymous/inline functions which have no 
 
 
 
-```
+```javascript
 function getValue(){
     return value;
 }
@@ -155,7 +147,7 @@ let getValue = ()=>{
 When you just have only return value in function you can even omit the { } block 
 
 
-```
+```javascript
 let getValue = () => value;
 ```
 
@@ -163,7 +155,7 @@ Arrow functions are quite helpful in cases where you have to write a short-inlin
 
 
 
-```
+```javascript
 setTimeout(()=>{console.log("hi")},2000);
 ```
 
@@ -171,7 +163,7 @@ setTimeout(()=>{console.log("hi")},2000);
 
 
 
-```
+```javascript
 
 
 let getValue = ()=>{
@@ -202,7 +194,7 @@ A function can have default parameter value in ES6. Deafult params must be at th
 
 
 
-```
+```javascript
 function wright(mass, g=10){
  return mass*g;
 }
@@ -219,7 +211,7 @@ weight(10,9.8); // this will retunr 98 with 9.8 as value of g
 
 
 
-```
+```javascript
  
 
 function weight(mass, g=10){
@@ -245,13 +237,13 @@ console.log(weight(10,9.8));
 Rest parameters in a functions help us to provide indefinite number of arguments in a functions. Suppose you want to make a sum function like :
 
 
-```
+```javascript
 sum(x1,x2,x3...xn); //  a function with indefinite number of paramaters 
 ```
 
 To make such function you can use rest paramters (...x). Here x can be accessed inside function as an array of arguments passed.
 
-```
+```javascript
 function sum(...x){
 // do the logic
 }; 
@@ -266,7 +258,7 @@ Note : You must have rest parameter as last argument in function.
 
 
 
-```
+```javascript
 function sum (y,...x){
    // 1st argument will go in y. 
 }
@@ -276,7 +268,7 @@ function sum (y,...x){
 
 
 
-```
+```javascript
 
 
 function sum(...x){
@@ -303,7 +295,7 @@ console.log(sum(1,2,3,4));
 Spread operators do the reverse of rest parameters. If you have to put all elements of an array or object one-by-one - you can use spread operator instead. See the below example to understand
 
 
-```
+```javascript
 let cities =  ["jaipur","delhi","mumbai"];
 
 console.log(...cities);  //style1
@@ -318,7 +310,7 @@ Spread operator can also be used to handle object properties and making a new ob
 
 
 
-```
+```javascript
 var kid ={name:"abhishek",age:30};
 
 var student = {...kid, course:"angular"};
@@ -330,7 +322,7 @@ var student = {...kid, course:"angular"};
 
 
 
-```
+```javascript
 
 
 var cities =  ["jaipur","delhi","mumbai"];
@@ -360,7 +352,7 @@ We can use destructuring assignment to easily pickup value from objects and arra
 
 
 
-```
+```javascript
 const person = {name:"abhishek",age:30,city:"delhi"}
 const {name,age,city} = person;  // destructered assignment
 console.log(name,age,city);
@@ -370,7 +362,7 @@ console.log(name,age,city);
 You can even rename the variables :
 
 
-```
+```javascript
 const person = {name:"abhishek",age:30,city:"delhi"}
 const {name:personname,age:personage,city:personcity} = person;  // destructered assignment
 console.log(personname,personage,personcity);
@@ -381,7 +373,7 @@ We can also destructure an array
 
 
 
-```
+```javascript
 var cities = ["delhi","jaipur","mumbai"];
 
 const [a,,b] = cities;
@@ -398,7 +390,7 @@ console.log(a,b);
 
 
 
-```
+```javascript
 
 
 const person = {name:"abhishek",age:30,city:"delhi"}
@@ -432,7 +424,7 @@ Template literals are a good way to create dynamic string without using complex 
 
 
 
-```
+```javascript
 var country = "India";
 var str = `This is my ${country}`;
 console.log(str);
@@ -445,7 +437,7 @@ $() can also hold any Javascript expression which can be evaluated and returns a
 
 
 
-```
+```javascript
 var a = 4;
 var b = 5;
 var str = `Total sum is  ${a+b}`;
@@ -457,7 +449,7 @@ console.log(str);
 
 
 
-```
+```javascript
 
 
 var country = "India";
@@ -481,7 +473,8 @@ The Object literals are used to write object definitions in short way.
 
 
 
-```
+```javascript
+
 
 var name="abhishek";
 var age=30;
@@ -498,7 +491,7 @@ var person ={name,age,city};
 
 
 
-```
+```javascript
 
 var name="abhishek";
 var age=30;
@@ -512,11 +505,6 @@ var personShort ={name,age,city};
 
 console.log(person,personShort);
 ```
-
-    SyntaxError: Identifier 'name' has already been declared
-    SyntaxError: Identifier 'age' has already been declared
-    SyntaxError: Identifier 'city' has already been declared
-    SyntaxError: Identifier 'person' has already been declared
     { name: 'abhishek', age: 30, city: 'delhi' } { name: 'abhishek', age: 30, city: 'delhi' }
 
 
@@ -547,7 +535,8 @@ var p2 = new People('ajay');
 
 
 
-```
+```javascript
+
 
 
 class People {
@@ -578,7 +567,8 @@ console.log(p2.getName());
 
 You can export a function or class or object using new **export** keyword
 
-```
+```javascript
+
 function sum(a,b){
 	return a+b;
 }
@@ -595,7 +585,7 @@ export {sum,diff}
 and get these using **import** keyword in the new file
 
 
-```
+```javascript
 
 
 import {sum,diff} from './sample_js_lib.js';
