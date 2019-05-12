@@ -11,7 +11,8 @@ To create a new variable your write **var** and name of variable. Variable names
 Variable in Javascript are **Weakly Typed** and they don't have any strict types to be defined like **int**, **string** etc. However on assignment they dynamically change the data type accordingly. Let's declare some common types  of Javascript variables.
 
 
-```
+```javascript
+
 
 
 //This is a comment in JS
@@ -48,15 +49,16 @@ console.log(number,average,name);  // Multiple console logs can be done using co
 
 If you are declaring variable but not assigning them values, default value will be `undefined`. It is a special type in javascript.
 
-```
+```javascript
+
 var myName;
 ```
 
 Check the example below :
 
 
+```javascript
 
-```
  
 
 var myName;
@@ -72,14 +74,16 @@ console.log(myName);
 Variables in Javascript can be assigned to various data type without any errors. Example
 
 
-```
+```javascript
+
  var a = 5;         // assigned number
  a = "hello";       // now asssigned string
 ```
 
 Also variable can dynamically change their types according to need.
 
-```
+```javascript
+
 var a = 5;
 var b = "hello";
 
@@ -93,7 +97,8 @@ Check out some more example of such type conversions below :
 
 
 
-```
+```javascript
+
 
 
 var a = 5;
@@ -126,7 +131,7 @@ console.log(a*b);   // as string hello can not be converted to a number - Gives 
 ## Basic Arithmetic Operations in Javascript
 
 
-```
+```javascript
 
 
 var a = 5;
@@ -181,8 +186,8 @@ Function can be written in 2 different ways :
 **functional style :**
 
 
+```javascript
 
-```
 function sum(a,b){
   return a + b;
 }
@@ -193,7 +198,8 @@ function sum(a,b){
 
 
 
-```
+```javascript
+
 var sum = functions(a,b){
   return a + b;
 }
@@ -203,7 +209,8 @@ Both are mostly identical in use but have minor diference in memory allocation. 
 
 
 
-```
+```javascript
+
 sum();
 ```
 
@@ -213,13 +220,15 @@ A function returns value and it can be assigned to a varible. Infollowing exampl
 
 
 
-```
+```javascript
+
 var ret = sum(4,5);
 ```
 
 if you a function doesn't define the return value it returns `undefined`
 
-```
+```javascript
+
 function speak(){
 console.log("hello");
 };
@@ -233,7 +242,7 @@ speak();   //this will return undefined
 
 
 
-```
+```javascript
 
 
 function sum(a,b){
@@ -261,8 +270,7 @@ console.log(speakResult);  // this will be undefined
 
 ```
 
-    ... ...
-    ... ...
+  
     sumResult: 9 diffResult: -1
     ... ... ...
     speak
@@ -309,7 +317,8 @@ If-else is used as standard style using conditions for **true** and **false**
 
 
 
-```
+```javascript
+
 var number = 40;
 if(number > 33){
    console.log("pass");
@@ -322,7 +331,8 @@ else{
 For more complex scenarios we can use **else if**
 
 
-```
+```javascript
+
 var number = 40;
 if(number < 33){
    console.log("fail");
@@ -342,7 +352,8 @@ a quick way to judge value between two conditions. It is good to put it where yo
 
 
 
-```
+```javascript
+
 var number = 40;
 var result = number > 33 ? 'pass':'fail';
 
@@ -350,7 +361,7 @@ console.log(number);
 ```
 
 
-```
+```javascript
 
 
 var number = 72;
@@ -372,7 +383,8 @@ var result = number>30? "pass" : "fail" ;
 
 For loop is one the most used syntax in JS programing. It's structure is same as any other for loop in any other language
 
-```
+```javascript
+
 for (step = 0; step < 5; step++) {
   // Runs 5 times, with values of step 0 through 4.
   console.log(step);
@@ -417,7 +429,7 @@ e.g.    factor(60) returns true
 ## *String* concatenations
 
 
-```
+```javascript
 
 
 var country  = "India";
@@ -433,7 +445,8 @@ console.log(sentence);
 ## *String* Properties and Case Change
 
 
-```
+```javascript
+
 var org = "Youstart";
 
 
