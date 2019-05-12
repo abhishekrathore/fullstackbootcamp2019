@@ -172,173 +172,6 @@ console.log(diff);
     -5
 ```    
 
-### Lab Problem 1
-
-* All problems must be in form of a JS function with input passed as arguments of the function.
-
-1. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
-
-```javascript
-
-e.g.    area_of_triangle(5,6,7)
-
-output : 14.69
-
-```
-
-2. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
- [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]
-Expected Output :
-60°C is 140 °F
-45°F is 7.222222222222222°C
-
-
-```javascript
-
-e.g.    c_to_f(60) returns 140
-e.g.    f_to_c(45)  returns 7.222
-
-```
-
-
-3. Write a JavaScript program to find the largest of three given integers.
-
-
-```javascript
-
-e.g.    max(1,2,5) returns 5
-
-
-```
-
-
-4. Write a JavaScript program to check if a given positive number is a multiple of 3 or a multiple of 7. 
-
-```javascript
-
-e.g.    factor(60) returns true
-        factor(14) returns true
-        factor(13) returns false
-
-
-```
-
-
-# Understanding Strings
-
-## *String* concatenations
-
-
-```
-
-
-var country  = "India";
-var capital = "Delhi";
-
-var sentence = country + " is my country. " + capital + " is its captial.";
-
-console.log(sentence);
-```
-
-    India is my country. Delhi is its captial.
-
-
-
-
-
-## *String* Properties and Case Change
-
-
-```
-var org = "Youstart";
-
-
-// Using Index of chars to select chars
-
-var firstLetter = org[0];
-var length = org.length;
-var lastLetter = org[length-1];
-
-
-console.log(firstLetter);
-console.log(length);
-console.log(lastLetter);
-
-//Uppercase and Lowercase in JS
-
-var capitalText = org.toUpperCase();
-var lowerText = org.toLowerCase();
-
-console.log(capitalText);
-console.log(lowerText);
-```
-
-    Y
-    8
-    
-    t
-    YOUSTART
-    youstart
-
-
-
-
-1. Write a JavaScript program to capitalize the first letter of each word of a given string.
-
-```javascript
-
-e.g. capitalize("Youstart") returns "YOUstart"
-
-
-```
-
-2. ** It is found by comparing two DNA strands and counting how many of the nucleotides are different from their equivalent in the other string.Find out the difference in 2 strings. How many chars are different ?
-
-
-GAGCCTACTAACGGGAT
-CATCGTAATGACGGCCT
-^ ^ ^  ^ ^    ^^
-
-```javascript
-
-DNA("GAGCCTACTAACGGGAT","CATCGTAATGACGGCCT") returns 7
-
-```
-
-7. Determine if a sentence is a pangram. A pangram (Greek: παν γράμμα, pan gramma, "every letter") is a sentence using every letter of the alphabet at least once. The best known English pangram is "The quick brown fox jumps over the lazy dog." The alphabet used is ASCII, and case insensitive, from 'a' to 'z' inclusively.
-
-```javascript
-pangram("The quick brown fox jumps over the lazy dog.") returns true
-pangram("abcdefghijklmnopqrstuvwxyz") returns true
-pangram("A normal sentence which doesnt have all chars") returns false
-```
-
-
-8. Determine if a word or phrase is an isogram.An isogram (also known as a "nonpattern word") is a word or phrase without a repeating letter. Examples of isograms:
-`lumberjacks`
-`background`
-`downstream`
-The word `isograms`, however, is not an isogram, because the s repeats.
-
-```javascript
-isogram("lumberjack") returns true
-isogram("isograms") returns false
-
-```
-
-9. Convert a long phrase to its acronym. Help generate some jargon by writing a program that converts a long name like `Portable Network Graphics` to its acronym (PNG).
-
-```
-acronym("Portable Network Graphics") returns "PNG"
-
-```
-
-
-
-
-
-# Javascript Functions 
-
 ## Functions
 
 Functions in Javascript are similar to other languages but don't have a compulsory return value. Default return value is `undefined`
@@ -434,6 +267,240 @@ console.log(speakResult);  // this will be undefined
     ... ... ...
     speak
     undefined
+
+
+
+
+### Lab Problem Set 1
+
+* All problems must be in form of a JS function with input passed as arguments of the function.
+
+1. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
+
+```javascript
+
+e.g.    area_of_triangle(5,6,7)
+
+output : 14.69
+
+```
+
+2. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
+ [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]
+Expected Output :
+60°C is 140 °F
+45°F is 7.222222222222222°C
+
+
+```javascript
+
+e.g.    c_to_f(60) returns 140
+e.g.    f_to_c(45)  returns 7.222
+
+```
+
+
+
+# Conditionals in JS
+
+### If else :
+
+If-else is used as standard style using conditions for **true** and **false**
+
+
+
+```
+var number = 40;
+if(number > 33){
+   console.log("pass");
+}
+else{
+   console.log("fail");
+}
+```
+
+For more complex scenarios we can use **else if**
+
+
+```
+var number = 40;
+if(number < 33){
+   console.log("fail");
+}
+else if(number>=33 && number<70){
+   console.log("pass");
+}
+else{
+   console.log("distinction");
+}
+```
+
+
+### ternary operator (? :)
+
+a quick way to judge value between two conditions. It is good to put it where you want to assign the output of if-else to some variable
+
+
+
+```
+var number = 40;
+var result = number > 33 ? 'pass':'fail';
+
+console.log(number);
+```
+
+
+```
+
+
+var number = 72;
+
+if( number < 30 ){
+    console.log("fail");
+}else if( number > 70 ){
+    console.log("distinction");
+}else if( number > 30 ){
+    console.log("pass");
+}
+
+var result = number>30? "pass" : "fail" ;
+  console.log(result);
+
+```
+
+### Lab Problem Set 2
+
+
+
+1. Write a JavaScript program to find the largest of three given integers.
+
+
+```javascript
+
+e.g.    max(1,2,5) returns 5
+
+
+```
+
+
+2. Write a JavaScript program to check if a given positive number is a multiple of 3 or a multiple of 7. 
+
+```javascript
+
+e.g.    factor(60) returns true
+        factor(14) returns true
+        factor(13) returns false
+
+
+```
+
+# Understanding Strings
+
+## *String* concatenations
+
+
+```
+
+
+var country  = "India";
+var capital = "Delhi";
+
+var sentence = country + " is my country. " + capital + " is its captial.";
+
+console.log(sentence);
+```
+
+    India is my country. Delhi is its captial.
+
+## *String* Properties and Case Change
+
+
+```
+var org = "Youstart";
+
+
+// Using Index of chars to select chars
+
+var firstLetter = org[0];
+var length = org.length;
+var lastLetter = org[length-1];
+
+
+console.log(firstLetter);
+console.log(length);
+console.log(lastLetter);
+
+//Uppercase and Lowercase in JS
+
+var capitalText = org.toUpperCase();
+var lowerText = org.toLowerCase();
+
+console.log(capitalText);
+console.log(lowerText);
+```
+
+    Y
+    8
+    
+    t
+    YOUSTART
+    youstart
+
+
+### Lab Problem Set 2
+
+
+1. Write a JavaScript program to capitalize the first letter of each word of a given string.
+
+```javascript
+
+e.g. capitalize("Youstart") returns "YOUstart"
+
+
+```
+
+2. ** It is found by comparing two DNA strands and counting how many of the nucleotides are different from their equivalent in the other string.Find out the difference in 2 strings. How many chars are different ?
+
+
+GAGCCTACTAACGGGAT
+CATCGTAATGACGGCCT
+^ ^ ^  ^ ^    ^^
+
+```javascript
+
+DNA("GAGCCTACTAACGGGAT","CATCGTAATGACGGCCT") returns 7
+
+```
+
+7. Determine if a sentence is a pangram. A pangram (Greek: παν γράμμα, pan gramma, "every letter") is a sentence using every letter of the alphabet at least once. The best known English pangram is "The quick brown fox jumps over the lazy dog." The alphabet used is ASCII, and case insensitive, from 'a' to 'z' inclusively.
+
+```javascript
+pangram("The quick brown fox jumps over the lazy dog.") returns true
+pangram("abcdefghijklmnopqrstuvwxyz") returns true
+pangram("A normal sentence which doesnt have all chars") returns false
+```
+
+
+8. Determine if a word or phrase is an isogram.An isogram (also known as a "nonpattern word") is a word or phrase without a repeating letter. Examples of isograms:
+`lumberjacks`
+`background`
+`downstream`
+The word `isograms`, however, is not an isogram, because the s repeats.
+
+```javascript
+isogram("lumberjack") returns true
+isogram("isograms") returns false
+
+```
+
+9. Convert a long phrase to its acronym. Help generate some jargon by writing a program that converts a long name like `Portable Network Graphics` to its acronym (PNG).
+
+```
+acronym("Portable Network Graphics") returns "PNG"
+
+```
+
+
 
 
 # Arrays
@@ -773,79 +840,6 @@ console.log(records[0].name.last);  //Last Name of 1st record
     Weeks
     Steele
 
-
-## Conditionals in JS
-
-### If else :
-
-If-else is used as standard style using conditions for **true** and **false**
-
-
-
-```
-var number = 40;
-if(number > 33){
-   console.log("pass");
-}
-else{
-   console.log("fail");
-}
-```
-
-For more complex scenarios we can use **else if**
-
-
-```
-var number = 40;
-if(number < 33){
-   console.log("fail");
-}
-else if(number>=33 && number<70){
-   console.log("pass");
-}
-else{
-   console.log("distinction");
-}
-```
-
-
-### ternary operator (? :)
-
-a quick way to judge value between two conditions. It is good to put it where you want to assign the output of if-else to some variable
-
-
-
-```
-var number = 40;
-var result = number > 33 ? 'pass':'fail';
-
-console.log(number);
-```
-
-
-
-
-
-
-```
-
-
-var number = 72;
-
-if( number < 30 ){
-    console.log("fail");
-}else if( number > 70 ){
-    console.log("distinction");
-}else if( number > 30 ){
-    console.log("pass");
-}
-
-var result = number>30? "pass" : "fail" ;
-  console.log(result);
-```
-
-    ... ... ... ... ... ... distinction
-    pass
 
 
 ## Object access using Array style
