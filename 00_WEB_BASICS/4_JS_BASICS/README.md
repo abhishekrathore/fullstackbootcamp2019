@@ -368,6 +368,24 @@ var result = number>30? "pass" : "fail" ;
 
 ```
 
+### for loop
+
+For loop is one the most used syntax in JS programing. It's structure is same as any other for loop in any other language
+
+```
+for (step = 0; step < 5; step++) {
+  // Runs 5 times, with values of step 0 through 4.
+  console.log(step);
+}
+
+0
+1
+2
+3
+4
+```
+
+
 ### Lab Problem Set 2
 
 
@@ -447,7 +465,7 @@ console.log(lowerText);
     youstart
 
 
-### Lab Problem Set 2
+### Lab Problem Set 3
 
 
 1. Write a JavaScript program to capitalize the first letter of each word of a given string.
@@ -633,10 +651,14 @@ groups[1][0] = "kohli";
 console.log(groups);
 ```
 
+### Lab Problem Set 3
 
-```
 
-```
+1. Write a JavaScript program to test if a given array of integers contains 30 and 40. The array length should be 0, 1, or 2.
+2. Write a JavaScript program to swap the first and last elements of a given array of integers. The array length should be at least 1.
+3. Write a JavaScript function to find the highest and lowest value in an array of integers.
+4. Write a JavaScript function to calculate the sum of values in an array.
+
 
 # Objects in JS
 
@@ -1363,3 +1385,38 @@ Now create following functions which will pass **object** as any person :
 - **removeMobile(object, mobileNumber)** : to remove a  mobile number for this person passed in args
 
 - **totalMobiles(object)** : to count mobile numbers for person pass as args and return the count;
+
+
+
+
+
+## Additional Problems [optional]
+1. Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen. 
+
+2. Write a JavaScript program to construct the following pattern, using a nested for loop.
+
+```
+*  
+* *  
+* * *  
+* * * *  
+* * * * *  
+```
+
+
+3. Write a JavaScript program to reverse the string ‘YoustartLabs’ by periodically removing one letter from the end of the string and attaching it to the front.
+
+4. Write a JavaScript program to test if a given integer is greater than 15 return the given number, otherwise return 15
+5. Write a JavaScript program to sort three numbers.
+6. Write a JavaScript program to check if a given positive number is a multiple of 3 or a multiple of 7. 
+7. Write a JavaScript program to determine whether a given year is a leap year.
+8. Write a JavaScript program to calculate days left until next New year.
+9. Write a JavaScript program to check if a given integer has an increasing digits sequence.
+10. Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.
+11. Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.
+12. Write a JavaScript program to check if the last digit of the three given positive integers is same.  
+13. Write a JavaScript program to check from two given integers if either one is 8 or their sum or difference is 8.
+14. Write a JavaScript program to find the types of a given angle- Acute, Right, Obtuse and Straight angle.
+15. Write a JavaScript program to check if a point lies strictly inside a given circle.
+16. Write a JavaScript function to test if a number is a power of 2. 
+17. Write a JavaScript function to count the digits of an integer. 
