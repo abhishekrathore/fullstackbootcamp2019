@@ -2,7 +2,7 @@
 JavaScript Basics [Slides](./JS.pdf)
 
 
-# Javascript  Data Types
+# 1. Javascript  Data Types
 
 ## Types of variables in Javascript
 
@@ -301,9 +301,9 @@ e.g.    f_to_c(45)  returns 7.222
 
 
 
-# Conditionals in JS
+# 2. Conditionals in JS
 
-### If else :
+## If else :
 
 If-else is used as standard style using conditions for **true** and **false**
 
@@ -336,7 +336,7 @@ else{
 ```
 
 
-### ternary operator (? :)
+## ternary operator (? :)
 
 a quick way to judge value between two conditions. It is good to put it where you want to assign the output of if-else to some variable
 
@@ -368,7 +368,7 @@ var result = number>30? "pass" : "fail" ;
 
 ```
 
-### for loop
+## for loop
 
 For loop is one the most used syntax in JS programing. It's structure is same as any other for loop in any other language
 
@@ -412,7 +412,7 @@ e.g.    factor(60) returns true
 
 ```
 
-# Understanding Strings
+# 3. Strings
 
 ## *String* concatenations
 
@@ -520,8 +520,8 @@ acronym("Portable Network Graphics") returns "PNG"
 
 
 
+# 4. Arrays
 
-# Arrays
 
 ## *Arrays* : Poperties and Functions :
 
@@ -597,7 +597,7 @@ console.log(retValSpl);  // deleted chuck of array
 var index = cities.indexOf("London")
 console.log(index);   // returns 1 as index of "London"
 ```
-
+```
     cities: []
     metros: [ 'delhi', 'jaipur', 'pune', 'bangalore' ]
     4
@@ -613,9 +613,8 @@ console.log(index);   // returns 1 as index of "London"
     [ 'Vegas', 'Paris' ]
     1
     
-
-
-## Nested *Arrays*
+```
+### Nested *Arrays*
 
 Nested Arrays in JS are possible and easy to use using Indexes.
 
@@ -660,7 +659,7 @@ console.log(groups);
 4. Write a JavaScript function to calculate the sum of values in an array.
 
 
-# Objects in JS
+# 5. Objects in JS
 
 ## Objects 
 
