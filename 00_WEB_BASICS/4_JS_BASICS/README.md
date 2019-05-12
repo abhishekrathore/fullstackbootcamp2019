@@ -1447,3 +1447,8 @@ console.log(str, typeof(str));
 15. Write a JavaScript program to check if a point lies strictly inside a given circle.
 16. Write a JavaScript function to test if a number is a power of 2. 
 17. Write a JavaScript function to count the digits of an integer. 
+
+
+# Additional Resources for JS
+
+* Complete JavaScript book for experts [Link](https://github.com/getify/You-Dont-Know-JS)
