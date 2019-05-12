@@ -650,7 +650,7 @@ groups[1][0] = "kohli";
 console.log(groups);
 ```
 
-### Lab Problem Set 3
+### Lab Problem Set 4
 
 
 1. Write a JavaScript program to test if a given array of integers contains 30 and 40. The array length should be 0, 1, or 2.
@@ -894,6 +894,215 @@ var name = person[property];
 ```
 
 This can be very helpful when you have a dynamic property use case
+
+
+
+
+## Lab Problem Set 5
+
+You have to create a **Shopping_Cart** array with following features :
+
+- **addItem(itemName)** : this function should add string itemName to cart
+
+- **removeItem(itemName)**:  this function should remove any item which matches itemName. *Hint : search for index of itemName and then remove it*
+
+- **cartSize()** : returns size of cart in terms of number of cart Items.
+
+
+
+
+```
+
+
+var shopping_cart= [];
+
+
+function addItem(itemName){
+   shopping_cart.push(itemName);
+}
+
+
+function removeItem(itemName){
+   var index = shopping_cart.indexOf(itemName)
+   shopping_cart.splice(index,1);
+
+}
+
+function cartSize(){
+    return shopping_cart.length;
+    
+}
+
+addItem("cake");
+addItem("soap");
+addItem("bread")
+
+console.log(shopping_cart); //should show ["cake","soap","bread"]
+
+
+
+removeItem("soap");
+
+console.log(shopping_cart); //should show ["cake","bread"]
+
+
+var len = cartSize();  //should return 1
+console.log(len);
+
+```
+
+    ... ...
+    ... ... ... ...
+    ... ... ...
+    [ 'cake', 'soap', 'bread' ]
+    [ 'cake', 'bread' ]
+    2
+    
+
+
+## Lab Problem Set 6
+
+We have to create object called **person**:
+
+We want to accomplish following :
+
+- person should have a **name** property
+- person should have an **age** property
+- person should have a list of mobile numbers (**mobiles**)
+
+Now create following functions :
+
+- **getName()** : to return person's name
+
+- **setName(newName)** : to change person's name to **newName**
+
+- **getStatus()** : based on age one should get return value as  "*kid*",  "*teenager*", "*adult*" , "*old*". You can take limits as 10, 20, 60 for various status. Also a value of 0 -100 is only allowed. Else function will print "invalid age"
+
+- **addMobile(mobileNumber)** : to add a new mobile number for this person
+
+- **removeMobile(mobileNumber)** : to remove a  mobile number for this person
+
+- **totalMobiles()** : to count mobile numbers for this person and return the count;
+
+
+
+
+
+```
+
+
+var person = {};
+
+person.name =  "abhishek";
+person.age = 62;
+person.mobiles = [123,345];
+
+function getName(){
+    return person.name;
+}
+
+function setName(name){
+    person.name = name;
+}
+
+function getStatus(){
+    var status = "invalid age";
+    
+    if(person.age>60 && person.age<=100){
+        status = "old";
+    }
+    else if(person.age>20){
+        status = "adult";
+    }
+    else if(person.age>10){
+        status = "teenager";
+    }
+    else if(person.age>=0){
+       status = "kid"; 
+    }
+    
+    return status;
+}
+
+function addMobile(mobileNumber){
+    person.mobiles.push(mobileNumber);
+}
+
+function removeMobile(mobileNumber){
+    var index = person.mobiles.indexOf(mobileNumber)
+    person.mobiles.splice(index,1);
+}
+
+function totalMobiles(mobileNumber){
+    return person.mobiles.length;
+}
+
+
+var name = getName();  
+console.log(name);
+
+setName("sachin");
+console.log(person);
+
+console.log(getStatus());
+
+addMobile(456);
+console.log(person.mobiles);
+
+removeMobile(123);
+console.log(person.mobiles);
+
+var count = totalMobiles();
+console.log(count);
+
+
+
+```
+
+    ... ...
+    ... ...
+    ... ... ... ..... ..... ... ..... ..... ... ..... ..... ... ..... ..... ... ... ...
+    ... ...
+    ... ... ...
+    ... ...
+    abhishek
+    { name: 'sachin', age: 62, mobiles: [ 123, 345 ] }
+    old
+    [ 123, 345, 456 ]
+    
+    [ 345, 456 ]
+    
+    2
+    
+
+
+## Lab Problem Set 7
+
+In Lab Task 2 you have imlemented some function which only work for a object **person**. Now modify you functions in a way that you can do the following :
+
+
+We have to create mulitple object with difference variale name like **person1**, **person2**,  **person3**:
+
+We want to accomplish following :
+
+- object should have a **name** property
+- object should have an **age** property
+- object should have a list of mobile numbers (**mobiles**)
+
+Now create following functions which will pass **object** as any person :
+
+- **getValue(object, prop)** : to return value of propertiy **prop** for person **object**
+
+- **setValue(object, prop, propValue)** : to change proptery **prop** value to **propValue** for person **object**
+
+- **getStatus(object)** : based on age one should get return value as  "*kid*",  "*teenager*", "*adult*" , "*old*". You can take limits as 10, 20, 60 for various status. Also a value of 0 -100 is only allowed. Else function will print "invalid age"
+
+- **addMobile(object, mobileNumber)** : to add a new mobile number for this person passed in args
+
+- **removeMobile(object, mobileNumber)** : to remove a  mobile number for this person passed in args
+
+- **totalMobiles(object)** : to count mobile numbers for person pass as args and return the count;
+
 
 
 # Miscellaneous [ Optional ]
@@ -1177,213 +1386,6 @@ console.log(str, typeof(str));
     5 'number'
     5 string
 
-
-# Labs
-
-## Lab Task 1
-
-You have to create a **Shopping_Cart** array with following features :
-
-- **addItem(itemName)** : this function should add string itemName to cart
-
-- **removeItem(itemName)**:  this function should remove any item which matches itemName. *Hint : search for index of itemName and then remove it*
-
-- **cartSize()** : returns size of cart in terms of number of cart Items.
-
-
-
-
-```
-
-
-var shopping_cart= [];
-
-
-function addItem(itemName){
-   shopping_cart.push(itemName);
-}
-
-
-function removeItem(itemName){
-   var index = shopping_cart.indexOf(itemName)
-   shopping_cart.splice(index,1);
-
-}
-
-function cartSize(){
-    return shopping_cart.length;
-    
-}
-
-addItem("cake");
-addItem("soap");
-addItem("bread")
-
-console.log(shopping_cart); //should show ["cake","soap","bread"]
-
-
-
-removeItem("soap");
-
-console.log(shopping_cart); //should show ["cake","bread"]
-
-
-var len = cartSize();  //should return 1
-console.log(len);
-
-```
-
-    ... ...
-    ... ... ... ...
-    ... ... ...
-    [ 'cake', 'soap', 'bread' ]
-    [ 'cake', 'bread' ]
-    2
-    
-
-
-## Lab Task 2
-
-We have to create object called **person**:
-
-We want to accomplish following :
-
-- person should have a **name** property
-- person should have an **age** property
-- person should have a list of mobile numbers (**mobiles**)
-
-Now create following functions :
-
-- **getName()** : to return person's name
-
-- **setName(newName)** : to change person's name to **newName**
-
-- **getStatus()** : based on age one should get return value as  "*kid*",  "*teenager*", "*adult*" , "*old*". You can take limits as 10, 20, 60 for various status. Also a value of 0 -100 is only allowed. Else function will print "invalid age"
-
-- **addMobile(mobileNumber)** : to add a new mobile number for this person
-
-- **removeMobile(mobileNumber)** : to remove a  mobile number for this person
-
-- **totalMobiles()** : to count mobile numbers for this person and return the count;
-
-
-
-
-
-```
-
-
-var person = {};
-
-person.name =  "abhishek";
-person.age = 62;
-person.mobiles = [123,345];
-
-function getName(){
-    return person.name;
-}
-
-function setName(name){
-    person.name = name;
-}
-
-function getStatus(){
-    var status = "invalid age";
-    
-    if(person.age>60 && person.age<=100){
-        status = "old";
-    }
-    else if(person.age>20){
-        status = "adult";
-    }
-    else if(person.age>10){
-        status = "teenager";
-    }
-    else if(person.age>=0){
-       status = "kid"; 
-    }
-    
-    return status;
-}
-
-function addMobile(mobileNumber){
-    person.mobiles.push(mobileNumber);
-}
-
-function removeMobile(mobileNumber){
-    var index = person.mobiles.indexOf(mobileNumber)
-    person.mobiles.splice(index,1);
-}
-
-function totalMobiles(mobileNumber){
-    return person.mobiles.length;
-}
-
-
-var name = getName();  
-console.log(name);
-
-setName("sachin");
-console.log(person);
-
-console.log(getStatus());
-
-addMobile(456);
-console.log(person.mobiles);
-
-removeMobile(123);
-console.log(person.mobiles);
-
-var count = totalMobiles();
-console.log(count);
-
-
-
-```
-
-    ... ...
-    ... ...
-    ... ... ... ..... ..... ... ..... ..... ... ..... ..... ... ..... ..... ... ... ...
-    ... ...
-    ... ... ...
-    ... ...
-    abhishek
-    { name: 'sachin', age: 62, mobiles: [ 123, 345 ] }
-    old
-    [ 123, 345, 456 ]
-    
-    [ 345, 456 ]
-    
-    2
-    
-
-
-## Lab  Task 3
-
-In Lab Task 2 you have imlemented some function which only work for a object **person**. Now modify you functions in a way that you can do the following :
-
-
-We have to create mulitple object with difference variale name like **person1**, **person2**,  **person3**:
-
-We want to accomplish following :
-
-- object should have a **name** property
-- object should have an **age** property
-- object should have a list of mobile numbers (**mobiles**)
-
-Now create following functions which will pass **object** as any person :
-
-- **getValue(object, prop)** : to return value of propertiy **prop** for person **object**
-
-- **setValue(object, prop, propValue)** : to change proptery **prop** value to **propValue** for person **object**
-
-- **getStatus(object)** : based on age one should get return value as  "*kid*",  "*teenager*", "*adult*" , "*old*". You can take limits as 10, 20, 60 for various status. Also a value of 0 -100 is only allowed. Else function will print "invalid age"
-
-- **addMobile(object, mobileNumber)** : to add a new mobile number for this person passed in args
-
-- **removeMobile(object, mobileNumber)** : to remove a  mobile number for this person passed in args
-
-- **totalMobiles(object)** : to count mobile numbers for person pass as args and return the count;
 
 
 
