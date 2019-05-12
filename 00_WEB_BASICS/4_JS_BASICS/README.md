@@ -485,7 +485,7 @@ console.log(lowerText);
 
 ```javascript
 
-e.g. capitalize("Youstart") returns "YOUstart"
+e.g. capitalize("we are the champions") returns "We Are The Champions"
 
 
 ```
@@ -668,7 +668,7 @@ console.log(groups);
 ### Lab Problem Set 4
 
 
-1. Write a JavaScript program to test if a given array of integers contains 30 and 40. The array length should be 0, 1, or 2.
+1. Write a JavaScript program to test if a given array of integers contains 30 and 40.
 2. Write a JavaScript program to swap the first and last elements of a given array of integers. The array length should be at least 1.
 3. Write a JavaScript function to find the highest and lowest value in an array of integers.
 4. Write a JavaScript function to calculate the sum of values in an array.
@@ -918,6 +918,25 @@ var name = person[property];
 
 This can be very helpful when you have a dynamic property use case
 
+
+## Array and Objects are assigned by Reference:
+
+Whenever you have a situation like
+
+```javascript
+
+//In Arrays
+
+
+var cities = ["jaipur","delhi"];
+var villages = cities;  // Now villages is exactly same reference as cities. They are pointing to same array
+
+//In Objects
+
+var person ={};
+var otherPerson = person; // Now otherPerson is exactly same reference as person. If you change otherPerson, person will also change.
+
+```
 
 
 
