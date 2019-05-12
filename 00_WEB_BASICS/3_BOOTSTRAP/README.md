@@ -79,7 +79,7 @@ Use grid layouts and `justify-content`,`text-center` classes to make centered el
 
 ## 7. Make Responsive Grid
 
-Create 2 list side-by-side using Bootstrap grid. List should collapse under each other in small screen for `xs` screen size
+Create 2 list side-by-side using Bootstrap grid. List should collapse under each other in small screen for `sm` screen size
 
 ### Output
 
@@ -87,7 +87,7 @@ Create 2 list side-by-side using Bootstrap grid. List should collapse under each
 
 ## 8. Make Responsive Form
 
-Change the form to show only centered form which 50% of screen width in `md` screen size and above. For smaller screen size use 100% area of screen.
+Change the form to show only centered form which 50% of screen width in `md` screen size and above. For smaller screen size(`sm` and extra small) use 100% area of screen.
 
 ### Output
 
