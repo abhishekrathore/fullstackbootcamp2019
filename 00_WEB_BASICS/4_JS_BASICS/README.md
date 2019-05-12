@@ -513,7 +513,7 @@ isogram("isograms") returns false
 
 9. Convert a long phrase to its acronym. Help generate some jargon by writing a program that converts a long name like `Portable Network Graphics` to its acronym (PNG).
 
-```
+```javascript
 acronym("Portable Network Graphics") returns "PNG"
 
 ```
@@ -547,7 +547,7 @@ All above functions are mutator functions and change the original array on which
 
 
 
-```
+```javascript
 
 
 var cities = []; //blank array
@@ -597,21 +597,22 @@ console.log(retValSpl);  // deleted chuck of array
 var index = cities.indexOf("London")
 console.log(index);   // returns 1 as index of "London"
 ```
-```
-    cities: []
-    metros: [ 'delhi', 'jaipur', 'pune', 'bangalore' ]
-    4
-    
-    [ 'New York' ]
-    [ 'New York', 'Chicago' ]
-    [ 'New York' ]
-    [ 'New York', 'Denver', 'LA', 'Vegas', 'Paris', 'London' ]
-    [ 'New York', 'Vegas', 'Paris', 'London' ]
-    5
-    
-    delhi
-    [ 'Vegas', 'Paris' ]
-    1
+
+```javascript  
+  cities: []
+  metros: [ 'delhi', 'jaipur', 'pune', 'bangalore' ]
+  4
+  
+  [ 'New York' ]
+  [ 'New York', 'Chicago' ]
+  [ 'New York' ]
+  [ 'New York', 'Denver', 'LA', 'Vegas', 'Paris', 'London' ]
+  [ 'New York', 'Vegas', 'Paris', 'London' ]
+  5
+  
+  delhi
+  [ 'Vegas', 'Paris' ]
+
     
 ```
 ### Nested *Arrays*
@@ -620,7 +621,8 @@ Nested Arrays in JS are possible and easy to use using Indexes.
 
 
 
-```
+```javascript
+
 var groups = [["sachin","rahul"],["virat","rohit","vijay"]]
 
 
@@ -634,7 +636,7 @@ groups[1][0] = "kohli";  //changes value of array "virat" to "kohli"
 
 
 
-```
+```javascript
 
 
 var groups = [["sachin","rahul"],["virat","rohit","vijay"]]
@@ -666,7 +668,8 @@ console.log(groups);
 Objects in Javascript are simple (key, value) pair collections :
 
 
-```
+```javascript
+
 var person = {"name":"sachin"};
 ```
 
@@ -685,14 +688,16 @@ The above is called** dot operator** and can be used to set a key's value or get
 **Getting Value :**
 
 
-```
+```javascript
+
 var name = person.name;  
 ```
 
 **Setting Value :**
 
 
-```
+```javascript
+
 person.name = "rahul";  
 ```
 
@@ -700,7 +705,8 @@ person.name = "rahul";
 
 We can even add more objects inside an object 
 
-```
+```javascript
+
 var person = {};
 person.name = "sachin";
 person.mobile = {}    // nested level object
@@ -721,14 +727,16 @@ We can delete properties from objects using **delete** operator
 
 
 
-```
+```javascript
+
 delete person.name;  // this will remove name property from person object
 ```
 
 
 
 
-```
+```javascript
+
 
 
 var player = {"name":"sachin","age":40}; 
@@ -750,7 +758,8 @@ We can use JS objects as data storage for multiple records. Here is an example o
 
 
 
-```
+```javascript
+
 [
   {
     "balance": "$1,025.60",
@@ -803,7 +812,8 @@ We can use JS objects as data storage for multiple records. Here is an example o
 
 
 
-```
+```javascript
+
 
 
 var records = [
@@ -856,7 +866,6 @@ console.log(records[0].name.last);  //Last Name of 1st record
 
 ```
 
-    ... ... ... ... ... ... ..... ..... ..... ... ... ... ... ... ... ... ... ... ... ... ..... ..... ..... ... ... ... ... ... ... ... ... ... ... ... ..... ..... ..... ... ... ... ... ...
     { first: 'Weeks', last: 'Steele' }
     Weeks
     Steele
@@ -869,7 +878,8 @@ You can access object in array style brackets also :
 
 
 
-```
+```javascript
+
 var person = {};
 
 person["name"]  = "abhishek";
@@ -881,8 +891,8 @@ var name = person["name"];
 This convention has an added advantage that "name" or any other properties can be variable.
 
 
+```javascript
 
-```
 var person = {};
 
 var property = "name"
@@ -911,7 +921,8 @@ You have to create a **Shopping_Cart** array with following features :
 
 
 
-```
+```javascript
+
 
 
 var shopping_cart= [];
@@ -988,7 +999,8 @@ Now create following functions :
 
 
 
-```
+```javascript
+
 
 
 var person = {};
@@ -1058,13 +1070,6 @@ console.log(count);
 
 
 ```
-
-    ... ...
-    ... ...
-    ... ... ... ..... ..... ... ..... ..... ... ..... ..... ... ..... ..... ... ... ...
-    ... ...
-    ... ... ...
-    ... ...
     abhishek
     { name: 'sachin', age: 62, mobiles: [ 123, 345 ] }
     old
@@ -1111,7 +1116,8 @@ Now create following functions which will pass **object** as any person :
 
 We know that Javascript used  == for equality checks but this sometimes create bad results as its not a **strict equality** check
 
-```
+```javascript
+
 var a  = "5";
 var b = 5;
 
@@ -1124,7 +1130,8 @@ Above example will consider it equal. To check **strict equality** of types also
 
 
 
-```
+```javascript
+
 var a  = "5";
 var b = 5;
 
@@ -1140,9 +1147,7 @@ if(a===b){
 
 
 
-```
-
-
+```javascript
 
 var a = 5;
 var b ="5";
@@ -1161,8 +1166,8 @@ if (a === b){
 }
 ```
 
-    ... ... ... ... true
-    ... ... ... ... false
+     true
+     false
 
 
 ## Truthy and Falsy values
@@ -1170,7 +1175,8 @@ if (a === b){
 What happens if you check this
 
 
-```
+```javascript
+
 var a = 5;
 
 if(a){
@@ -1187,7 +1193,8 @@ Check out all examples to understand this
 
 
 
-```
+```javascript
+
 
 
 function check(a){
@@ -1214,7 +1221,7 @@ check(" ");
 
 ```
 
-    ... ..... ..... ..... ..... ...
+    
     5: true
     0: false
     0: true
@@ -1242,14 +1249,15 @@ You can escape special chars like double quote in a string using \ (backslash)
 
 
 
-```
+```javascript
+
 var sentence = "He was known as \"Master Blaster\". "
 ```
 
 
 
+```javascript
 
-```
 
 
 var sentence = "He was known as \"Master Blaster\". "
@@ -1265,7 +1273,8 @@ Strings are immutbale in a sense that you can't change indiviudal chars or part 
 
 
 
-```
+```javascript
+
 var name = 'Youstart';
 
 name[0] ="Z";
@@ -1274,14 +1283,16 @@ name[0] ="Z";
 
 This code will have not change in **name** variable and it will remain same as before. But we can change whole string to new assigned value :
 
-```
+```javascript
+
 name  = "Zoustart"
 ```
 
 
 
 
-```
+```javascript
+
 
 
 
@@ -1302,7 +1313,8 @@ console.log(name);
 In JS we can check type of variable via the **typeof** function. We can check that various data types are shown below :
 
 
-```
+```javascript
+
 
 
 var name = "Abhishek";
@@ -1348,8 +1360,8 @@ We know that JS can dynamically change the types. However, sometimes we need to 
 ### parseInt(String) - for converting string to integer
 
 
+```javascript
 
-```
 var number = "5"
 var i  = parseInt(number);
 ```
@@ -1359,8 +1371,8 @@ var i  = parseInt(number);
 ### toString() - for converting a variable to String. 
 
 
+```javascript
 
-```
 var j = 5
 var str  = j.toString();
 ```
@@ -1368,7 +1380,8 @@ var str  = j.toString();
 
 
 
-```
+```javascript
+
 
 
 var num = "5"
