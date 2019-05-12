@@ -1515,3 +1515,4 @@ console.log(str, typeof(str));
 # Additional Resources for JS
 
 * Complete JavaScript book for experts [Link](https://github.com/getify/You-Dont-Know-JS)
+* Awesome Javascript resources [Link](https://github.com/micromata/awesome-javascript-learning)
