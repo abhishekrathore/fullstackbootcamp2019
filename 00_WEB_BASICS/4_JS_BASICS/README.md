@@ -230,43 +230,6 @@ console.log(lowerText);
     youstart
 
 
-## Immutability of *Strings*
-
-Strings are immutbale in a sense that you can't change indiviudal chars or part of string.
-
-
-
-```
-var name = 'Youstart';
-
-name[0] ="Z";
-
-```
-
-This code will have not change in **name** variable and it will remain same as before. But we can change whole string to new assigned value :
-
-```
-name  = "Zoustart"
-```
-
-
-
-
-```
-
-
-
-var name = "Youstart";
-console.log("name.0:", name[0]);
-
-name[0] = "Z";
-console.log("name:",name);
-
-name = "Zoustart";
-console.log(name);
-
-
-```
 
 # Javascript Functions 
 
@@ -823,7 +786,7 @@ var name = person[property];
 This can be very helpful when you have a dynamic property use case
 
 
-# Miscellaneous
+# Miscellaneous [ Optional ]
 
 ## Equality Operator ( === vs ==)
 
@@ -977,6 +940,43 @@ console.log(sentence);
 
     He was known as "Master Blaster".
 
+## Immutability of *Strings*
+
+Strings are immutbale in a sense that you can't change indiviudal chars or part of string.
+
+
+
+```
+var name = 'Youstart';
+
+name[0] ="Z";
+
+```
+
+This code will have not change in **name** variable and it will remain same as before. But we can change whole string to new assigned value :
+
+```
+name  = "Zoustart"
+```
+
+
+
+
+```
+
+
+
+var name = "Youstart";
+console.log("name.0:", name[0]);
+
+name[0] = "Z";
+console.log("name:",name);
+
+name = "Zoustart";
+console.log(name);
+
+
+```
 
 ## Checking Type of a Variable
 
