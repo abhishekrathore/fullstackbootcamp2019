@@ -190,28 +190,7 @@ console.log(sentence);
     India is my country. Delhi is its captial.
 
 
-## Escape chars
 
-You can escape special chars like double quote in a string using \ (backslash)
-
-
-
-```
-var sentence = "He was known as \"Master Blaster\". "
-```
-
-
-
-
-```
-
-
-var sentence = "He was known as \"Master Blaster\". "
-
-console.log(sentence);
-```
-
-    He was known as "Master Blaster".
 
 
 ## *String* Properties and Case Change
@@ -963,6 +942,40 @@ check(" ");
     [object Object]: true
     : true
     : true
+
+
+
+
+
+
+
+
+
+
+
+
+## Escape chars
+
+You can escape special chars like double quote in a string using \ (backslash)
+
+
+
+```
+var sentence = "He was known as \"Master Blaster\". "
+```
+
+
+
+
+```
+
+
+var sentence = "He was known as \"Master Blaster\". "
+
+console.log(sentence);
+```
+
+    He was known as "Master Blaster".
 
 
 ## Checking Type of a Variable
