@@ -1,4 +1,6 @@
 
+JavaScript Basics [Slides](./JS.pdf)
+
 
 # Javascript  Data Types
 
