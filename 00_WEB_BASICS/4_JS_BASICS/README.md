@@ -161,7 +161,7 @@ console.log(diff);
 
 
 ```
-
+```
     sum: 11 diff: -1 product: 30 division: 0.8333333333333334 modulus: 5
     12
     
@@ -170,7 +170,58 @@ console.log(diff);
     -2
     
     -5
-    
+```    
+
+### Lab Problem 1
+
+* All problems must be in form of a JS function with input passed as arguments of the function.
+
+1. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
+
+```javascript
+
+e.g.    area_of_triangle(5,6,7)
+
+output : 14.69
+
+```
+
+2. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
+ [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]
+Expected Output :
+60°C is 140 °F
+45°F is 7.222222222222222°C
+
+
+```javascript
+
+e.g.    c_to_f(60) returns 140
+e.g.    f_to_c(45)  returns 7.222
+
+```
+
+
+3. Write a JavaScript program to find the largest of three given integers.
+
+
+```javascript
+
+e.g.    max(1,2,5) returns 5
+
+
+```
+
+
+4. Write a JavaScript program to check if a given positive number is a multiple of 3 or a multiple of 7. 
+
+```javascript
+
+e.g.    factor(60) returns true
+        factor(14) returns true
+        factor(13) returns false
+
+
+```
 
 
 # Understanding Strings
