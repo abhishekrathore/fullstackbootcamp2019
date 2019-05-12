@@ -250,8 +250,6 @@ console.log(sentence);
 
 
 ```
-
-
 var org = "Youstart";
 
 
@@ -281,6 +279,61 @@ console.log(lowerText);
     t
     YOUSTART
     youstart
+
+
+
+
+1. Write a JavaScript program to capitalize the first letter of each word of a given string.
+
+```javascript
+
+e.g. capitalize("Youstart") returns "YOUstart"
+
+
+```
+
+2. ** It is found by comparing two DNA strands and counting how many of the nucleotides are different from their equivalent in the other string.Find out the difference in 2 strings. How many chars are different ?
+
+
+GAGCCTACTAACGGGAT
+CATCGTAATGACGGCCT
+^ ^ ^  ^ ^    ^^
+
+```javascript
+
+DNA("GAGCCTACTAACGGGAT","CATCGTAATGACGGCCT") returns 7
+
+```
+
+7. Determine if a sentence is a pangram. A pangram (Greek: παν γράμμα, pan gramma, "every letter") is a sentence using every letter of the alphabet at least once. The best known English pangram is "The quick brown fox jumps over the lazy dog." The alphabet used is ASCII, and case insensitive, from 'a' to 'z' inclusively.
+
+```javascript
+pangram("The quick brown fox jumps over the lazy dog.") returns true
+pangram("abcdefghijklmnopqrstuvwxyz") returns true
+pangram("A normal sentence which doesnt have all chars") returns false
+```
+
+
+8. Determine if a word or phrase is an isogram.An isogram (also known as a "nonpattern word") is a word or phrase without a repeating letter. Examples of isograms:
+`lumberjacks`
+`background`
+`downstream`
+The word `isograms`, however, is not an isogram, because the s repeats.
+
+```javascript
+isogram("lumberjack") returns true
+isogram("isograms") returns false
+
+```
+
+9. Convert a long phrase to its acronym. Help generate some jargon by writing a program that converts a long name like `Portable Network Graphics` to its acronym (PNG).
+
+```
+acronym("Portable Network Graphics") returns "PNG"
+
+```
+
+
 
 
 
