@@ -91,4 +91,4 @@ Change the form to show only centered form which 50% of screen width in `md` scr
 
 ### Output
 
-![Output 7](./images/7.png)
+![Output 7](./images/7_responsive.gif)
