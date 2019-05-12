@@ -1144,6 +1144,50 @@ Now create following functions which will pass **object** as any person :
 
 # Miscellaneous [ Optional ]
 
+## Math Library
+
+JavaScript Math library is quite useful for frequently used math operations.
+
+```javascript
+
+Math.abs(-2)  // returns 2
+Math.round(2.66) // returns 3
+Math.floor(3.55) // return 3
+Math.ceil(3.45) // returns 4
+Math.round(x)  // returns the value of x rounded to its nearest integer
+Math.E
+Math.PI
+Math.pow(2,3)  //returns the value of 2 to the power of 3 = 8
+Math.sqrt(64);      // returns 8
+Math.max(0, 150, 30, 20, -8, -200);  // returns 150
+Math.random() // returns random value from 0 to 1.
+
+
+```
+
+## Timer Libaries
+
+If you want to execute a function in JS after a time interval. You can use one of these functions.
+
+```javascript
+
+setTimeout(function(){
+    console.log("delayed message")
+}, 3000)   // function executes after 3 secs only once
+
+```
+
+
+```javascript
+
+setInterval(function(){
+    console.log("repeated message")
+}, 3000)   // function executes after every 3 secs
+
+```
+
+
+
 ## Equality Operator ( === vs ==)
 
 We know that Javascript used  == for equality checks but this sometimes create bad results as its not a **strict equality** check
