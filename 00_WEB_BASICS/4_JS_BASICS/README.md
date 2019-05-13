@@ -492,10 +492,12 @@ e.g. capitalize("we are the champions") returns "We Are The Champions"
 
 2. ** It is found by comparing two DNA strands and counting how many of the nucleotides are different from their equivalent in the other string.Find out the difference in 2 strings. How many chars are different ?
 
-
+```
 GAGCCTACTAACGGGAT
 CATCGTAATGACGGCCT
 ^ ^ ^  ^ ^    ^^
+
+```
 
 ```javascript
 
