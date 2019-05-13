@@ -181,7 +181,7 @@ console.log(getDouble(2));
 
 ```
 
-    ... ... SyntaxError: Identifier 'getValue' has already been declared
+    
     5
     
     4
@@ -409,10 +409,8 @@ console.log(a,b);
 
 ```
 
-    SyntaxError: Identifier 'person' has already been declared
-    SyntaxError: Identifier 'name' has already been declared
+   
     abhishek 30 delhi
-    SyntaxError: Identifier 'personname' has already been declared
     abhishek 30 delhi
     delhi mumbai
 
