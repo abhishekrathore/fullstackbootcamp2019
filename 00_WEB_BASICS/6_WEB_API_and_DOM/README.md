@@ -1,7 +1,6 @@
 
 # DOM API / Web API
 
-
 ## Document Object
 
 * `getElementByID(id)` : For selecting HTML Element using `id`
