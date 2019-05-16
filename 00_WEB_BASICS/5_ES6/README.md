@@ -9,7 +9,7 @@
 ```javascript
 var name = "abhishek";    //old style
 
-let name  = "abhishek";   //new style
+let name = "abhishek";   //new style
 ```
 
 Difference between **let** and **var**
@@ -37,7 +37,7 @@ if(true){
 let name  = "abhishek";
 }
 
-console.log(name);  // var is available outside the block {} 
+console.log(name);  // let is not available outside the block {} 
 
 
 ```
@@ -195,7 +195,7 @@ A function can have default parameter value in ES6. Deafult params must be at th
 
 
 ```javascript
-function wright(mass, g=10){
+function weight(mass, g=10){
  return mass*g;
 }
 
@@ -366,7 +366,7 @@ Spread operator can also be used to handle object properties and making a new ob
 
 
 ```javascript
-var kid ={name:"abhishek",age:30};
+var kid ={name:"johny",age:3};
 
 var student = {...kid, course:"angular"};
 ```
@@ -386,7 +386,7 @@ console.log(...cities);  //style1
 
 console.log("jaipur","delhi","mumbai");  //style2
 
-var kid ={name:"abhishek",age:30};
+var kid ={name:"johny",age:3};
 
 var student = {...kid, course:"angular"};
 
@@ -396,7 +396,7 @@ console.log(student);
 
     jaipur delhi mumbai
     jaipur delhi mumbai
-    { name: 'abhishek', age: 30, course: 'angular' }
+    { name: 'johny', age: 3, course: 'angular' }
 
 
     
