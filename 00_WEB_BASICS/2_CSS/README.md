@@ -92,7 +92,7 @@ Add a background image of [star](https://www.iconfinder.com/icons/42362/favorite
 
 ## 9. Change Width in Percentage
 
-Change width of list to 50% and check as shown in output
+Change `width` property of list to 50% and check as shown in output
 
 
 ### Output
@@ -105,7 +105,7 @@ Change width of list to 50% and check as shown in output
 Make use of CSS pseudo class `:hover` to 
 
 * change on hover color of list item
-* change mouse pointer to hand sign
+* change mouse pointer to hand sign, use `cursor` property
 
 
 ### Output
@@ -115,7 +115,7 @@ Make use of CSS pseudo class `:hover` to
 
 ## 11. Transform list item
 
-Shift the list item to right on hover using `transform` property
+Shift the list item to right on hover using `transform` property with `translate` options.
 
 ### Output
 

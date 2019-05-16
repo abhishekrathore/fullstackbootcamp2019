@@ -232,6 +232,53 @@ console.log(weight(10,9.8));
     
 
 
+# Lab Task 1
+
+1.  If you have an array like 
+
+    ```javascript
+      const numbers = [5, 7, 2];
+    ```
+
+    Check, which operations do work on it, and which don't:
+    a. Push, pop ?
+    b. Assigning a new array to `numbers`?
+
+2. Create an arrow function for finding `area of a circle`.The default value of `radius` will be `1`.
+
+```javascript
+  area_of_circle(radius);  //uses radius as value
+  area_of_circle()          // uses default value
+```
+
+
+## for ..of  loop
+
+for of loop is a better way of writing loops in Javascript when you have to iterate over every element in loop
+
+```javascript
+for (variable of iterable) {
+  statement
+}
+```
+
+```javascript
+const numbers = [2,5,8,7,9]
+
+for(let num of numbers){
+        console.log(num)
+    }
+
+    // 2
+    // 5
+    // 8
+    // 7
+    // 9
+
+```    
+
+
+
 ## Rest parameters
 
 Rest parameters in a functions help us to provide indefinite number of arguments in a functions. Suppose you want to make a sum function like :
@@ -288,6 +335,14 @@ console.log(sum(1,2,3,4));
     
     10
     
+# Lab Task 2
+
+1.  Create a arrow function named `average` to find average of `n` number of integers. `n` can vary. Use Rest parameters
+
+    ```javascript
+      average(1,2,3,4,5)  // returns 3
+      average(2,3,5,10)   // returns 4
+    ```
 
 
 ## Spread Operators
@@ -343,6 +398,8 @@ console.log(student);
     jaipur delhi mumbai
     { name: 'abhishek', age: 30, course: 'angular' }
 
+
+    
 
 ## Destructuring Assignments
 
@@ -413,6 +470,31 @@ console.log(a,b);
     abhishek 30 delhi
     abhishek 30 delhi
     delhi mumbai
+
+
+
+# Lab Task 3
+
+1.  Destructure `person` object to print value of `name`,`age` and `city` properties as `Name`, `Age` and `City`.
+
+    ```javascript
+      const person = {
+           name: "john",
+           age: 34,
+           city: "jaipur"
+        };
+
+
+   console.log(Name,Age,City);  
+
+    ```
+2. Create a new object `superhero` by extending properties of `person` given in above question. `superhero` must have a `superpower` property.
+
+```javascript
+console.log(superhero)    // {name:'john', age: 34, city:'jaipur', superpower:'thunderbolts'}
+ 
+```
+
 
 
 ## Template  Literals
@@ -593,4 +675,28 @@ console.log(sum(4,5),diff(4,5));
 ```
 
 
+# Lab Task 4
 
+1.  Create a class named `Animal` with methods `setVoice` and `getVoice` and property `voice`. Default `voice` value should be "talk". Otherwise one can set the voice using `setVoice` method. Also they can get the voice using `getVoice` method. You should be able to do the following :
+
+    ```javascript
+       
+       const wolf = new Animal("howl");
+       wolf.getVoice();   // should return 'howl'
+       wolf.setVoice('bark');
+       wolf.getVoice();   // should return 'bark'
+
+
+       const human = new Animal();
+       wolf.getVoice();   // should return 'talk' as default value
+
+    ```
+2. Create a new file name `animal.js` and put above code for `Animal` class in this file. Export `Animal` class in this file.  Now `import` `animal.js` file in your main JS file where you are solving problems. (e.g. app.js)
+
+```javascript
+   // Don't write Animal class in this file. That should be written in a different file.
+   
+   import {Animal} from './Animal.js';
+   const lion = new Animal("roar");
+ 
+```
