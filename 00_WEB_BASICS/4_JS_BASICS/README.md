@@ -1540,5 +1540,5 @@ console.log(str, typeof(str));
 
 * Complete JavaScript Book for Experts [Link](https://github.com/getify/You-Dont-Know-JS)
 * Awesome Javascript Resources [Link](https://github.com/micromata/awesome-javascript-learning)
-* More Practice problems in Basic JS [Here](https://www.freecodecamp.org/map#nested-collapseBasicJavaScript)
-* More Practice problems in Object and Array in JS [Here](https://www.freecodecamp.org/challenges/declare-javascript-objects-as-variables)
+* More Practice problems in Basic JS [Here](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript)
+* More Practice problems in Object and Array in JS [Here](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-data-structures)
