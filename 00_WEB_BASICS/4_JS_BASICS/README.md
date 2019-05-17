@@ -1513,6 +1513,26 @@ console.log(str, typeof(str));
 16. Write a JavaScript function to test if a number is a power of 2. 
 17. Write a JavaScript function to count the digits of an integer. 
 
+## Problems related to data structure
+
+18. Create a JSON data object for Facebook news feed, should have data for author name, author image, post content, list of likes, comments and share etc. You have to data in a way that you must be able to answer these :
+
+a. Check how many posts are there by a particular user in your feed ? 
+b. How many likes on 5th post ?
+c. Who are the users who liked 5th post ?
+d. Who is the First user to like 5th post ?
+e. How many users are there who have both commented and liked 5th post. Also show list of those users.
+f. Find out the person who has commented most on your feed. (In top 10 posts)
+
+19. Create a JS object representing your facebook friendlist. And than perform these actions.
+
+a. Delete friends who have fake as first name. ( e.g fake singh)
+b. Add 2 more friends to your friendlist at a time.
+c. print all friends in your friendlist sorted by Name.
+d. print all friends in your friendlist sorted by Length of Name( # of chars)
+e. print initials of all your friends (Virat Kohli becomes VK)
+f. print only friends who have same first names
+
 
 # Additional Resources for JS
 
