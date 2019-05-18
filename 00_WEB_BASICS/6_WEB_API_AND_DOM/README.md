@@ -17,7 +17,7 @@ This above element is represented in DOM as (not exactly same) :
 
 ```javascript
 
-var h1 = {
+var elem = {
     innerText : "Hello World",
     style : {
         color:"red",
@@ -34,11 +34,11 @@ Now if you want to change some property of this Object by programming, you can u
 
 
 ```javascript
-h1.style.color = "green"   //changes font color to green
+elem.style.color = "green"   //changes font color to green
 
 
 var i=0;
-setInterval(()=>{ h1.innerText = i; i++  }, 300) // runs this every 300 miliseconds and changes innerText of h1 to a new number;
+setInterval(()=>{ elem.innerText = i; i++  }, 300) // runs this every 300 miliseconds and changes innerText of elem to a new number;
 ```
 
 
@@ -67,16 +67,16 @@ To Select a HTML element of this type:
 One has to write a code similar to this in JS :
 
 ```javascript
-  var h1 = document.getElementById("heading")
+  var elem = document.getElementById("heading")
 
- // do some operations on h1 as shown above like changing changing innerText
+ // do some operations on elem as shown above like changing changing innerText
 
 ```
 
 
 ## Element Object
 
-The `h1` element selected above is just one of selected elements. Every element has few properties and functions which we can use to change the element. The DOM object doesn't behave as simple JS object - so we can't change all properties by simply 'dot' notation. e.g we can't do `h1.attributes.id = "newID"` we will have to use `setAttribute` method.
+The `elem` element selected above is just one of selected elements. Every element has few properties and functions which we can use to change the element. The DOM object doesn't behave as simple JS object - so we can't change all properties by simply 'dot' notation. e.g we can't do `elem.attributes.id = "newID"` we will have to use `setAttribute` method.
 
 Some of most common `properties` and `methods` of Element is given here :
 
@@ -99,16 +99,16 @@ HTML element :
 JS code :
 
 ```javascript
-var h1 = document.getElementById("heading")
+var elem = document.getElementById("heading")
 var i=0;
 
-setInterval(()=>{ h1.innerText = i; i++  }, 300)   // make a counter on your page.
+setInterval(()=>{ elem.innerText = i; i++  }, 300)   // make a counter on your page.
 
 
-h1.style.color = "green" ;   // change color
+elem.style.color = "green" ;   // change color
 
-h1.setAttribute('class', 'big');   //change class
-h1.getAttribute('class');     
+elem.setAttribute('class', 'big');   //change class
+elem.getAttribute('class');     
 
 ```
 
@@ -171,11 +171,11 @@ Let's see some commond example :
 
 ```js
 
-var h1 = document.getElementById("heading")
+var elem = document.getElementById("heading")
 
 var i=0;
 function counter(){
-    setInterval(()=>{ h1.innerText = i; i++  }, 300)
+    setInterval(()=>{ elem.innerText = i; i++  }, 300)
 } 
 
 ```
@@ -201,10 +201,10 @@ This is Javascript code required to change innerText
 
 ```js
 
-var h1 = document.getElementById("heading")
+var elem = document.getElementById("heading")
 
 function show(event){
-    h1.innerText = event.target.value
+    elem.innerText = event.target.value
 }
 
 ```
