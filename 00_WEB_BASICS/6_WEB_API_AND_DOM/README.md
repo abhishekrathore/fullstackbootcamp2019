@@ -1,5 +1,5 @@
 
-# DOM API / Web API
+# DOM / Web API
 
 
 DOM is acronym for Document Object Model, this is how your represent all your web page elements (HTML,CSS) in a Javascript Object format.
