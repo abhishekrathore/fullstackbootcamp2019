@@ -5,7 +5,6 @@
 ## *let*   vs  *var*
 
 
-
 ```javascript
 var name = "abhishek";    //old style
 
@@ -483,9 +482,8 @@ console.log(a,b);
            age: 34,
            city: "jaipur"
         };
-
-
-   console.log(Name,Age,City);  
+    
+     console.log(Name,Age,City);  
 
     ```
 2. Create a new object `superhero` by extending properties of `person` given in above question. `superhero` must have a `superpower` property.
@@ -594,7 +592,7 @@ JS is not class based inheritance language, but to match with existing standards
 
 
 
-```
+```javascript
 class People {
 constructor(name) {
       this.name = name;
@@ -617,29 +615,27 @@ var p2 = new People('ajay');
 
 ```javascript
 
+  class People {
+  constructor(name) {
+        this.name = name;
+      }
+      getName() {
+        return this.name;
+      }
+      setName(name) {
+        this.name = name;
+      }
+  }
 
+  var p1 = new People('abhishek');
+  var p2 = new People('ajay');
 
-class People {
-constructor(name) {
-      this.name = name;
-    }
-    getName() {
-      return this.name;
-    }
-    setName(name) {
-      this.name = name;
-    }
-}
+  console.log(p1,p2);
 
-var p1 = new People('abhishek');
-var p2 = new People('ajay');
+  p1.setName("john");
 
-console.log(p1,p2);
-
-p1.setName("john");
-
-console.log(p1.getName());
-console.log(p2.getName());
+  console.log(p1.getName());
+  console.log(p2.getName());
 ```
 
 ## Import and Export in Javascript
