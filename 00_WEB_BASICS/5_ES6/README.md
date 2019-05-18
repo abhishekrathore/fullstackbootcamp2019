@@ -5,7 +5,6 @@
 ## *let*   vs  *var*
 
 
-
 ```javascript
 var name = "abhishek";    //old style
 
