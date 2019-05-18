@@ -123,11 +123,11 @@ elem.getAttribute('class');
 JS code :
 
 ```javascript
-  var img = document.getElementById("image");
+  var logo = document.getElementById("image");
   var i=0;
 
 function rotate(i){
-    img.style.transform = "rotate("+i+"deg)"
+    logo.style.transform = "rotate("+i+"deg)"
     }
 
 setInterval(
