@@ -119,4 +119,170 @@ As you can't concat JSX elements you will have to create an Array of JSX element
 
 Create the same output using `.map()` function on `props.msg`
 
+```javascript
+
+   function App(props){
+   const JSX = props.msg.map((elem)=>(<h1>{elem}</h1>))
+   }
+
+```
+maps are easy way to iterate over a collection and return a modified collection
+
+
+## 10. Using Destructured props
+
+You can use props in a destructured object format for easy access
+
+```javascript
+
+   function App({msg}){
+         const JSX = msg.map((elem)=>(<h1>{elem}</h1>))
+   }   // destructured prope into  {msg} so we can use msg instead of props.msg
+
+```
+
+
+## 11. Using PropTypes
+
+PropTypes is used to ascertain that only a particular type of data types will be passed in props. If any other type is passed - React throws an error.
+
+```javascript
+
+import PropType from 'prop-types';
+
+   function App({msg}){
+   }
+
+   App.propTypes = {
+     msg : [PropTypes.string]
+   }
+
+```
+## 12. Default Props
+
+Default props are used to ascertain that default value will be passed in props, if no value is given in the code
+
+```javascript
+
+import PropType from 'prop-types';
+
+   function App({msg}){
+   }
+
+   App.defaultProps = {
+     msg : ["message1", "message2"]
+   }
+
+```
+
+
+## 13. Default Props
+
+Default props are used to ascertain that default value will be passed in props, if no value is given in the code
+
+```javascript
+
+import PropType from 'prop-types';
+
+   function App({msg}){
+   }
+
+   App.defaultProps = {
+     msg : ["message1", "message2"]
+   }
+
+```
+
+## 14. Class Based Components
+
+Class based components have more features than function based components, such as passing states, life cycle handlers
+
+```HTML
+
+<App name="YouStart"/>
+
+```
+
+```js
+
+class App extends React.Component {
+  
+  constructor(props){
+    super(props);
+  }
+
+  render(){
+    return <div>
+     <h1>Hello World {this.props.name} </h1>
+    </div>
+  }
+```
+
+
+## 15. Methods and this binding
+
+Methods can be called from any browser event, however care should be taken that they should be `bind` to main class `this` object.
+
+```HTML
+
+<App name="YouStart"/>
+
+```
+
+```js
+
+class App extends React.Component {
+  
+  constructor(props){
+    super(props);
+    this.clickHandler.bind(this)   // bind to same this of class
+  }
+
+  clickHandler(event){  // every Event Handler has first argument as Browser events
+    console.log(event) 
+  }
+
+  render(){
+    return <div>
+     <h1>Hello World {this.props.name} </h1>
+     <button onClick={(e)=>{this.clickHandler(e)}> Click </button>
+    </div>
+  }
+```
+
+## 16. Using State
+
+Props are read-only and can't be changed. So we need a gloal variable to store the change with the component. State is a global object which is used to change UI of your web components. Only when state is update DOM is updated. You can't change state object directly, so we use `setState` function which changes the state and refreshes the DOM.
+
+```HTML
+
+<App name="YouStart"/>
+
+```
+
+```js
+
+class App extends React.Component {
+  
+  constructor(props){
+    super(props);
+    this.clickHandler.bind(this)  
+    this.state = props   //copying props to this.state
+
+  }
+
+  clickHandler(event){  
+    console.log(event) 
+    this.setState({
+      name : event.target.value
+    })  // this changes name value of state and refreshed the DOM
+  }
+
+  render(){
+    return <div>
+     <h1>Hello World {this.state.name} </h1>   
+     <button onClick={(e)=>{this.clickHandler(e)}> Click </button>
+    </div>
+  }
+```
 
