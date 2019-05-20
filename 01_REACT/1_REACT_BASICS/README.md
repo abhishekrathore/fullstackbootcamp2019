@@ -176,24 +176,8 @@ import PropType from 'prop-types';
 ```
 
 
-## 13. Default Props
 
-Default props are used to ascertain that default value will be passed in props, if no value is given in the code
-
-```javascript
-
-import PropType from 'prop-types';
-
-   function App({msg}){
-   }
-
-   App.defaultProps = {
-     msg : ["message1", "message2"]
-   }
-
-```
-
-## 14. Class Based Components
+## 13. Class Based Components
 
 Class based components have more features than function based components, such as passing states, life cycle handlers
 
@@ -219,7 +203,7 @@ class App extends React.Component {
 ```
 
 
-## 15. Methods and this binding
+## 14. Methods and this binding
 
 Methods can be called from any browser event, however care should be taken that they should be `bind` to main class `this` object.
 
@@ -258,7 +242,7 @@ You will find that "Hello World, YouStart" as the h1 heading. As props are read-
 ![Output 15](./images/16_event.gif)
 
 
-## 16. Using State
+## 15. Using State
 
 Props are read-only and can't be changed. So we need a gloal variable to store the change with the component. State is a global object which is used to change UI of your web components. Only when state is update DOM is updated. You can't change state object directly, so we use `setState` function which changes the state and refreshes the DOM.
 
@@ -300,7 +284,7 @@ class App extends React.Component {
 
 ![Output 16](./images/17_input_event.gif)
 
-## 17. Parent-Child Component : Passing Props
+## 16. Parent-Child Component : Passing Props
 
 Passing props from parent to child is quite simple and is done via the same way as before. We use the child components arguments to pass the props.
 
