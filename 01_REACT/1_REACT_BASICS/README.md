@@ -245,12 +245,18 @@ class App extends React.Component {
   render(){
     return <div>
      <h1>Hello World {this.props.name} </h1>
-     <button onClick={(e)=>{this.clickHandler(e)}> Click </button>
+     <button onClick={(e)=>{this.clickHandler(e)}}> Click </button>
     </div>
   }
+}
 ```
 
 You will find that "Hello World, YouStart" as the h1 heading. As props are read-only(immutable) we can't change the variable part of this. For a dynamic response we have to use state variables. 
+
+### Output
+
+![Output 15](./images/16_event.gif)
+
 
 ## 16. Using State
 
@@ -266,27 +272,33 @@ Props are read-only and can't be changed. So we need a gloal variable to store t
 
 class App extends React.Component {
   
-  constructor(props){
-    super(props);
-    this.clickHandler.bind(this)  
-    this.state = props   //copying props to this.state
-
+    constructor(props){
+      super(props);
+      this.clickHandler.bind(this)  
+      this.state = props   //copying props to this.state
+  
+    }
+  
+    clickHandler(event){  
+      console.log(event) 
+      this.setState({
+        name : event.target.value
+      })  // this changes name value of state and refreshed the DOM
+    }
+  
+    render(){
+      return <div>
+       <h1>Hello World {this.state.name} </h1>   
+       <input onChange={(e)=>{this.clickHandler(e)}}/>
+      </div>
+    }
   }
 
-  clickHandler(event){  
-    console.log(event) 
-    this.setState({
-      name : event.target.value
-    })  // this changes name value of state and refreshed the DOM
-  }
-
-  render(){
-    return <div>
-     <h1>Hello World {this.state.name} </h1>   
-     <button onClick={(e)=>{this.clickHandler(e)}> Click </button>
-    </div>
-  }
 ```
+
+### Output
+
+![Output 16](./images/17_input_event.gif)
 
 ## 17. Parent-Child Component : Passing Props
 
@@ -312,5 +324,6 @@ const ParentComponent = (props)=>{
   }
 ```
 
+### Output 
 
 ![Output 17](./images/15_parent_props.png)
