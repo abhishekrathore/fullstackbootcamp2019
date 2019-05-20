@@ -219,18 +219,19 @@ class App extends React.Component {
   
   constructor(props){
     super(props);
-    this.clickHandler = this.clickHandler.bind(this)  
-   // bind to same this of class
+    this.clickHandler = this.clickHandler.bind(this);
+   
   }
 
   clickHandler(event){  // every Event Handler has first argument as Browser events
     console.log(event) 
+    
   }
 
   render(){
     return <div>
      <h1>Hello World {this.props.name} </h1>
-     <button onClick={(e)=>{this.clickHandler(e)}}> Click </button>
+     <button onClick={this.clickHandler.bind(this)}}> Click </button>
     </div>
   }
 }
@@ -243,7 +244,17 @@ You will find that "Hello World, YouStart" as the h1 heading. As props are read-
 ![Output 15](./images/16_event.gif)
 
 
-## 15. Using State
+
+## 15. Using Arrow functions to avoid binding 'this'
+
+You can use arrow functions which don't change the context of functions and inherently pass 'this' of Component to the function.
+
+```JSX
+       <input onChange={(e)=>{this.clickHandler(e)}}/>
+```
+
+
+## 16. Using State
 
 Props are read-only and can't be changed. So we need a gloal variable to store the change with the component. State is a global object which is used to change UI of your web components. Only when state is update DOM is updated. You can't change state object directly, so we use `setState` function which changes the state and refreshes the DOM.
 
@@ -259,7 +270,6 @@ class App extends React.Component {
   
     constructor(props){
       super(props);
-      this.clickHandler = this.clickHandler.bind(this)  
       this.state = props   //copying props to this.state
   
     }
@@ -285,7 +295,7 @@ class App extends React.Component {
 
 ![Output 16](./images/17_input_event.gif)
 
-## 16. Parent-Child Component : Passing Props
+## 17. Parent-Child Component : Passing Props
 
 Passing props from parent to child is quite simple and is done via the same way as before. We use the child components arguments to pass the props.
 
@@ -314,7 +324,7 @@ const ParentComponent = (props)=>{
 ![Output 17](./images/15_parent_props.png)
 
 
-## 17. Parent-Child Component : How to Pass state Up
+## 18. Parent-Child Component : How to Pass state Up
 
 Passing props from parent to child is quite simple and is done via the same way as before. We use the child components arguments to pass the props.
 
@@ -363,4 +373,4 @@ class InputBox extends React.Component {
 
 ### Output 
 
-![Output 17](./images/18_parent_child_state.gif)
+![Output 18](./images/18_parent_child_state.gif)
