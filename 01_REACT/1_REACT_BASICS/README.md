@@ -250,6 +250,8 @@ class App extends React.Component {
   }
 ```
 
+You will find that "Hello World, YouStart" as the h1 heading. As props are read-only(immutable) we can't change the variable part of this. For a dynamic response we have to use state variables. 
+
 ## 16. Using State
 
 Props are read-only and can't be changed. So we need a gloal variable to store the change with the component. State is a global object which is used to change UI of your web components. Only when state is update DOM is updated. You can't change state object directly, so we use `setState` function which changes the state and refreshes the DOM.
@@ -286,3 +288,29 @@ class App extends React.Component {
   }
 ```
 
+## 17. Parent-Child Component : Passing Props
+
+Passing props from parent to child is quite simple and is done via the same way as before. We use the child components arguments to pass the props.
+
+```js
+const ChildComponent = (props)=>{
+
+  return (<h3>Comopnent name is {props.name}</h3>)
+  
+}
+
+const ParentComponent = (props)=>{
+
+  const name = "MyChild";
+  
+    return (
+      <div>  
+      <h1>Parent Component</h1>
+      <ChildComponent name="firstChild"></ChildComponent>
+      </div>  
+    )
+  }
+```
+
+
+![Output 17](./images/15_parent_props.png)
