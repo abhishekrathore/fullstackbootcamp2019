@@ -374,3 +374,31 @@ class InputBox extends React.Component {
 ### Output 
 
 ![Output 18](./images/18_parent_child_state.gif)
+
+
+## 19. LifeCycle Events
+
+In React Component there are few lifecycle events which can be used to initialize some conditions or do the cleanup after some component changes.
+
+* `componentDidMount()` : method runs after the component output has been rendered to the DOM.
+* `componentWillMount()` : method runs before the component output has been rendered to the DOM. 
+* `componentDidUnmount()` : method runs after the component is removed from DOM.
+* `componentWillUn,ount()` : method runs before the component is removed from DOM.
+
+```js
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+   
+  }
+
+  componentDidMount() {
+
+  }
+
+  componentWillUnmount() {
+
+  }
+
+```  
