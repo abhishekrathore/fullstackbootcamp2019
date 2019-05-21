@@ -1117,10 +1117,10 @@ console.log(count);
 
 ## Lab Problem Set 7
 
-In Lab Task 2 you have imlemented some function which only work for a object **person**. Now modify you functions in a way that you can do the following :
+In Lab Problem set 6 you have imlemented some function which only work for a object **person**. Now modify you functions in a way that you can do the following :
 
 
-We have to create mulitple object with difference variale name like **person1**, **person2**,  **person3**:
+We have to create mulitple object with difference variable name like **person1**, **person2**,  **person3**:
 
 We want to accomplish following :
 
