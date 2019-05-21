@@ -14,7 +14,3 @@ Todo app can be used to maintain a list of your pending daily items. A Simple to
 ![Output](./images/todo-project.gif)
 
 
-
-## Additional features
-
-* 
