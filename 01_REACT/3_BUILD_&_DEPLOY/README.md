@@ -42,7 +42,7 @@ This will let you login into your google account and save the credentials in you
     ![output2](./images/2.png)
 
     3. You will have to choose what is your project folder. In case on react project it will be `build` folder as it contains final `index.html` file.
-     ![output3](./images/3.png)
+    ![output3](./images/3.png)
 
    4. You will be asked to rewrite URL to index.html . Type `y`
 
