@@ -50,11 +50,9 @@ This will let you login into your google account and save the credentials in you
 
    5. If asked to overwrite index.html. Type `N`
 
-    ![output5](./images/5.png)
-
    6. Finally you will see some files like firebase.json being created. They should be created just outside `build` folder.
 
-    ![output6](./images/6.png)
+    ![output5](./images/5.png)
 
 
 
