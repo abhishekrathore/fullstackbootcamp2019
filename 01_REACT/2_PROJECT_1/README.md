@@ -20,7 +20,7 @@ Todo app can be used to maintain a list of your pending daily items. A Simple to
 * Exit Animation : Animate list item at removal.
 * Pin element to Top of List : On double click make element reach top of list. You can show a different color also to show that element is pinned.
 * Show the date & time at which list item was added.
-
+* Order by : Todo Item names, Date added, Completed.
 
 
 
