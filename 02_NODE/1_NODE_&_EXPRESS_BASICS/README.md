@@ -1,4 +1,4 @@
-# Node/Express 
+# Node.js Runtime & Express Framework 
 
 Node is a run-time environment for Javascript which is based on chrome V8 engine. You can run your JS programs directly using `node`. Let say your code is in a file `index.js`. To run that file in node :
 
