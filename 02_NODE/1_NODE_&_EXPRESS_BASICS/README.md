@@ -60,9 +60,9 @@ Let's see the code of a simple server using Express:
 ```javascript
 
 const express = require("express");
-const app = express();
+const server = express();
 
-app.listen(8080,function(){
+server.listen(8080,function(){
     console.log("server started")
 })
 
@@ -79,13 +79,13 @@ Let's create a `GET` API endpoint which returns always a simple "hello" string i
 ```javascript
 
 const express = require("express");
-const app = express();
+const server = express();
 
-app.get("/demo",function(req,res){
+server.get("/demo",function(req,res){
     res.send("hello");
 })
 
-app.listen(8080,function(){
+server.listen(8080,function(){
     console.log("server started")
 })
 
@@ -128,7 +128,7 @@ To read such data in express you can use `req.query` :
 
 ```js
 
-app.get("/demo",function(req,res){
+server.get("/demo",function(req,res){
     console.log(req.query) // prints all data in request object
     res.send(req.query);  // send back same data in response object
 })
@@ -153,7 +153,7 @@ In this method you can have a URL with url path like `/Youstart/express` at end 
 
 ```js
 
-app.get("/demo/:name/:subject",function(req,res){
+server.get("/demo/:name/:subject",function(req,res){
     console.log(req.params) // prints all data in request object
     res.send(req.query);  // send back same data in response object
 })
@@ -182,7 +182,7 @@ Final method of sending data is via body part of request. We can send data direc
 
 ```js
 
-app.post("/demo",function(req,res){
+server.post("/demo",function(req,res){
     console.log(req.body) // prints all data in request object
     res.send(req.body);  // send back same data in response object
 })
