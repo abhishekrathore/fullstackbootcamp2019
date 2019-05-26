@@ -9,7 +9,7 @@ node index.js
 ```
 
 
-## Dependencies in Node
+## Dependencies in Node Project
 
 In Node we can use any library which is available on `npm` repositories. To initialize a node project, write commands :
 
@@ -35,9 +35,13 @@ One of the popular use of NodeJS is to use this as the Web server. However that 
 
 To create a simple server in NodeJS you need to write a lot of lines to send a response packet, like adding headers, adding body and sending final data. There is a better way to do all these in form of Express framework. Let's jump to that
 
-## ExpressJS Framework
+# ExpressJS Framework
 
-ExpressJS is the de-facto standard for web development using NodeJS these days. Express has a minimalistic but a great set of functions used to do server-side coding. It is quite simple to create a simple API using Express.
+ExpressJS is the de-facto standard for web development using NodeJS these days. Express has a minimalistic but a great set of functions used to do server-side coding.
+
+## Express setup
+
+It is quite simple to create a simple API using Express.
 
 To install express :
 
@@ -63,8 +67,10 @@ app.listen(8080,function(){
 })
 
 ```
+### Lab Task 1
 
-This server will do nothing but send 404 to any request as it has no end points.
+Setup the above mention server and observe the output in your browser.
+This server will do nothing but send `404` to any request as it has no end points. Checkout this server by typing `http://localhost:8080` in your browser.
 
 ## Creating API using ExpressJS
 
@@ -85,9 +91,12 @@ app.listen(8080,function(){
 
 ```
 
-Try to call this API in your browser `http://localhost:8080/demo` - this will return a string `"hello"` in response.
+### Lab Task 2
 
-To make API return JSON response - just change the response line to  and restart server again:
+Make above server with API endpoint `/demo`. 
+1. Try to call this API in your browser `http://localhost:8080/demo` - this will return a string `"hello"` in response.
+
+2. To make API return JSON response - just change the response line to  and restart server again:
 
 ```javascript
     res.json({name:"hello"});
@@ -101,10 +110,83 @@ In last example you have seen, two parameters in API callback function - these a
 
 Request object comprises of many properties, but important ones are :
 
-- Headers : Meta data sent by your browser like browser name, cookies, authentication information etc.
+- Type of Request : GET, POST, PUT, DELETE etc.
+Headers : Meta data sent by your browser like browser name, cookies, authentication information etc.
 - Query String (url?`name=john`) : This is used in GET requests to send data to server
 - Route Params (url/`john`) 
 - Body data : This is used in POST and other requests to send data to server
+
+3 major ways of sending data from client to server via request are :
+
+**1. Send data via URL in Query String**
+
+This is easiest method to send data and mostly used in GET request.
+
+When you have URL with `?name=Youstart&subject=express` at end, it translates in a query string. In query string each key,value pair is separated by `=` and between 2 such pairs we put `&`.
+
+To read such data in express you can use `req.query` :
+
+```js
+
+app.get("/demo",function(req,res){
+    console.log(req.query) // prints all data in request object
+    res.send(req.query);  // send back same data in response object
+})
+
+
+```
+
+
+### Lab Task 3
+
+Make above server with API endpoint `/demo` as shown above :
+
+1. Try to call this API in your browser `http://localhost:8080/demo?name=Youstart` - this will return a response of `req.query`  JSON object
+
+2. Create 3 query parameters `name`, `age`, `subject` with some values. Check the final output of `req.query` - can you find all data on server side. Can you send it back to client via `res` object.
+
+
+**2. Send data via Request Params**
+
+In this method you can have a URL with url path like `/Youstart/express` at end it translates in a param string. In param part string each value is separated by `/`. As you can see that URL only contains `value` not the `key` part of data. `key` part is decided by the endpoint definition at express server
+
+```js
+
+app.get("/demo/:name/:subject",function(req,res){
+    console.log(req.params) // prints all data in request object
+    res.send(req.query);  // send back same data in response object
+})
+
+```
+
+So sequence of values matter in this case. As values sent from client are matched with `name` and `subject` params of URL later.
+
+
+### Lab Task 4
+
+Make above server with API endpoint `/demo` as shown above :
+
+1. Try to call this API in your browser `http://localhost:8080/demo/Youstart/Express` - this will return a response of `req.params`  JSON object
+
+2. Create 3 URL params  `name`, `age`, `subject` . Call the URL and check the final output of `req.params` - can you find all data on server side. Can you send it back to client via `res` object.
+
+
+**3. Send data via Request Body**
+Final method of sending data is via body part of request. We can send data directly to body using URL. We have to either use one of these methods
+
+1. Use a HTML Form and make `method` value as `POST`. This will make all name=value pair to go via body of request.
+
+2. Use special browsers like POSTMAN to change the body directly. (We will see this example in next classes)
+
+```js
+
+app.post("/demo",function(req,res){
+    console.log(req.body) // prints all data in request object
+    res.send(req.body);  // send back same data in response object
+})
+
+```
+
 
 ## Response Object
 
@@ -114,41 +196,14 @@ Response object comprises of many properties, but important ones are :
 - Response status code (`200`, `404`, `403`, `502`)
 - Response body : Actual data to be sent to client : HTML, JS, JSON, CSS, Image etc.
 
-## Middlewares
+There are various methods in express response object :
 
-Middlewares are functions which are placed in request and response path and transform the request object data in some way or other.
-
-Middleware is always applied in a sequence, some of the application level middlewares are :
-
-- Static Middleware (express.static) : Used to create static web hosting on your node server (similar to http-server module)
-- Logging Middleware (morgan) 
-- Compression Middlewares (compress)
-- Session Middleware (express-session)
-- Authentication Middleware (passportjs)
-
-Middleware can also exist in other forms like 'routing middlewares' but that we will encounter later on.
-
-Let check out an example of `static` middleware. This is used for creating a static hosting of files. So when you have to serve - HTML, CSS, frontend JS. Images and other static resources - you can put them in a hosted directory (public directory)
-
-```javascript
-
-const express = require("express");
-const app = express();
-
-app.use(express.static('public'));
-app.get("/demo",function(req,res){
-    res.send("hello");
-})
-app.listen(8080,function(){
-    console.log("server started")
-})
+```js
+res.send("Hello")   // to send HTML or plain text
+res.json({name:"Youstart"}) // to send JSON data 
+res.status(404) // to change status code of response
 
 ```
-
-This example shows `public` directory is now hosted and we can put static content in that. Now you can put any file in `public` folder and it can be access by  prefixing it with server name.
-
-Example : suppose you have a file `demo.png` in `public` folder it can be accessed by `http://localhost:8080/demo.png` URL in browser or postman.
-
 
 
 ## POSTMAN API browser
@@ -164,3 +219,8 @@ The basic interface of postman looks like. Where you can change URL and also typ
 You can also pass JSON data in Request body using raw body data, this will be very useful when you will integrate your backend with front-end application which exchange all data in JSON format. (JS objects):
 
 ![POSTMAN raw data](./images/2.png)
+
+
+## Lab Task 5
+
+Check output of all Lab Tasks above with POSTMAN browser. Do you find any differences.
