@@ -173,6 +173,7 @@ Make above server with API endpoint `/demo` as shown above :
 
 
 **3. Send data via Request Body**
+
 Final method of sending data is via body part of request. We can send data directly to body using URL. We have to either use one of these methods
 
 1. Use a HTML Form and make `method` value as `POST`. This will make all name=value pair to go via body of request.
