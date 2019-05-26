@@ -148,6 +148,7 @@ Make above server with API endpoint `/demo` as shown above :
 
 **2. Send data via Request Params**
 
+
 In this method you can have a URL with url path like `/Youstart/express` at end it translates in a param string. In param part string each value is separated by `/`. As you can see that URL only contains `value` not the `key` part of data. `key` part is decided by the endpoint definition at express server
 
 ```js
