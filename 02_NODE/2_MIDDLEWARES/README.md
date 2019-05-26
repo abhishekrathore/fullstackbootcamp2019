@@ -99,6 +99,13 @@ You will notice that on each request you are getting lots of logs in your consol
 
 Session middleware is used to store session variable for each user on server side. This middleware can make use of any data storage depending on settings. By default it stores session variables in Memory (RAM).
 
+First install express-session middleware
+
+```shell
+npm install express-session
+```
+
+Now you can use it in your express server
 
 ```js
 var server = express()
