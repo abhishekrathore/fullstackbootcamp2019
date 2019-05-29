@@ -49,6 +49,58 @@ There can be many collections inside a database - collection is a group of docum
 Finally document is basic entity of storage in Mongod, it looks very similar to an object in JSON. (However it is BSON)
 
 
+## MONGO CLI
+
+
+Mongo DB community server comes with in-bulit Mongo CLI which can act as a terminal based client. You can use the CRUD functionality from here 
+
+Read the commands [here](https://docs.mongodb.com/manual/reference/mongo-shell/)
+
+## Lab Task 1
+
+* Try these commands given in Mongo CLI reference docs. 
+1. Show database
+2. Use database
+3. Show collection
+4. Create Query (insertOne, insertMany)
+5. Read Query (find, findOne)
+6. Update Query (updateOne)
+7. Delete Query (deleteOne, deleteMany)
+8. Delete database (drop)
+
+
+## Mongodump and Mongorestore
+
+These utilities comes with community server and can be found in CMD/terminal. They are not the part of Mongo CLI client.
+
+1. Mongodump command is used to take backup of complete database or some collections
+
+```bash
+
+mongodump  --db accounts 
+```
+Above command takes backup of database `accounts` and stores into a directory named `dump`
+
+2. Mongorestore command is used to restore database
+
+```bash
+
+mongorestore --db accounts dump/
+
+```
+
+Above command restore your database `accounts` from backup directory `dump`
+
+## Lab Task 2
+
+Use these commands on terminal/CMD (not inside mongo client)
+
+1. Take a backup of database you created in Lab task 1.
+
+2. Restore the backup of database from `dump` directory.
+
+
+
 
 ## Using MONGODB NODE.JS DRIVER  [OPTIONAL READING]
 
