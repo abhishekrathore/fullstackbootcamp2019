@@ -77,7 +77,7 @@ const Schema = mongoose.Schema;
 
 const taskSchema = new Schema({
     title:  String,
-    status:Boolean,
+    status: Boolean,
     date: { type: Date, default: Date.now },    
   });
   
@@ -114,11 +114,27 @@ server.post("/task",function(req,res){
 
 ```
 
-### Lab Task 1
-Create a database 
-You have to create an API Endpoint named `task`
+### Lab Task 2
 
+You have to create an API Endpoint to type `POST` named `/task`. It will create a new task item in database whenever called properly. All 3 fields `title`, `status`, `date` must be mandatory (`required`). If someone is not passing all fields properly, no database entry should be created.
 
+```js
+//request body :
+
+{
+    "title" : "task1",
+    "status" : true,
+    "date" :'2010-05-30"     
+
+}
+
+// response body should return the newly created object.
+
+res.json(task);
+
+```
+
+Check using any tool that new record in database is created. Also check name of collection. Is is `tasks` ?
 
 
 ### Read objects
@@ -143,6 +159,23 @@ server.get("/tasks",function(req,res){
 
 
 ```
+
+
+### Lab Task 3
+
+You have to create an API Endpoint to type `GET` named `/tasks`. It will return all task available in collection `tasks`.
+
+```js
+//request is GET so no data in body :
+
+
+// response body should return the all db objects of collection tasks.
+
+res.json(tasks);
+
+```
+
+Check if all records are returned in response. How you will change this API to make it return only one database record in which `title` is matched with `title` sent in request `query`.
 
 
 
@@ -181,6 +214,28 @@ server.put("/task/:name",function(req,res){
 
 ```
 
+
+### Lab Task 4
+
+You have to create an API Endpoint to type `PUT` named `/task/:id`. It will update existing task item in database which has ObjectId set to `id` you have passed. 
+
+```js
+//request params will have id in URL path :
+
+{
+    "title" : "task-changed",
+}
+
+// response body should return the newly updated object.
+
+res.json(task);
+
+```
+
+Check using any tool that only `title` of record in database is changed. All other properties remain the same.
+
+
+
 ### Delete - existing objects
 
 To Delete existing obejct from database we need to first find an object from database and then delete. This might be considered as a combination of `find` and `remove` methods.
@@ -196,3 +251,18 @@ server.delete("/task/:name",function(req,res){
 
 ```
 
+
+### Lab Task 5
+
+You have to create an API Endpoint to type `DELETE` named `/task/:id`. It will delete existing task item in database which has ObjectId set to `id` you have passed. 
+
+```js
+//request params will have id in URL path :
+
+// response body should return the deleted object.
+
+res.json(task);
+
+```
+
+Check using any tool that the record is deleted or not.
