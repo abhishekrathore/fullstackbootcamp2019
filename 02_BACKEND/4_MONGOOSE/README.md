@@ -199,7 +199,7 @@ First scenario is covered using this query. Here you are overwriting all propert
 ```js
 
 server.put("/task/:name",function(req,res){
-    Task.findOneAndUpdate({name:req.params.name},{name:'YouStart'},function(err,doc){
+    Task.findOneAndUpdate({name:req.params.name},{name:'YouStart'},{overwrite:true},function(err,doc){
         console.log(doc)  // this will contain db object
     })
 })
@@ -217,6 +217,8 @@ server.put("/task/:name",function(req,res){
 })
 
 ```
+
+Latest version of mongoose puts $set as default for first level keys of object. To avoid $set and to use overwrite one must put `{overwrite:true}`
 
 
 ### Lab Task 4
