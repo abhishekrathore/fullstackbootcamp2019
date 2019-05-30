@@ -59,7 +59,7 @@ Many types of data are allowed in Mongoose Schema. The common SchemaTypes are:
 
 You can put a lot of conditions inside the Schema object :
 
-```json
+```js
 
     age: { type: Number, default:18, min: 18, max: 65, required :true }
     // default value of Number is 18 and should be between 18-65, and can't be null or empty
