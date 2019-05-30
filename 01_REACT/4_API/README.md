@@ -15,6 +15,9 @@ npm install axios
 
 ```
 
+import `axios` and in file to use.
+
+
 ### API Calls
 
 
