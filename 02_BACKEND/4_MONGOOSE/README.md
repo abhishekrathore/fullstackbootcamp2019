@@ -149,14 +149,14 @@ To read new obejcts from database, one can use `find` query or similar queries. 
 ```js
 
 server.get("/task/:name",function(req,res){
-    Task.findOne({name:req.query.name},function(err,doc){
+    Task.findOne({name:req.params.name},function(err,doc){
         console.log(doc)  // this will contain db object
     })
 })
 
 
 server.get("/tasks",function(req,res){
-    Task.findMany({},function(err,docs){
+    Task.find({},function(err,docs){
         console.log(docs)  // this is an array which contains all task objects
     })
 })
