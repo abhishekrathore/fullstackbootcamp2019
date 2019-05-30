@@ -18,7 +18,7 @@ npm install axios
 ### API Calls
 
 
-* GET request :
+* *GET* request :
 
 ```js
  axios.get('http://localhost:8080/tasks')
@@ -27,7 +27,7 @@ npm install axios
  })
 ```
 
-* POST request :
+* *POST* request :
 
 ```js
  axios.post('http://localhost:8080/task',data)
@@ -36,7 +36,7 @@ npm install axios
  })
 ```
 
-* PUT request :
+* *PUT* request :
 
 ```js
  axios.put('http://localhost:8080/task/123',data)  // assuming 123 is id of task record
@@ -45,7 +45,7 @@ npm install axios
  })
 ```
 
-* DELETE request :
+* *DELETE* request :
 
 ```js
  axios.delete('http://localhost:8080/task/123') // assuming 123 is id of task record
