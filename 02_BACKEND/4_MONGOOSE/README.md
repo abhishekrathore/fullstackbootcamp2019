@@ -4,30 +4,50 @@ Mongoose is an ODM (ORM) which can be used with NodeJS/Express environment to se
 
 You can checkout mongoose documentation [Here](https://mongoosejs.com/)
 
+## Setup
 
+You can install mongoose using npm :
+
+```bash
+npm install mongoose
+```
+
+After setup, you can import mongoose to your project :
+
+```js
+const mongoose = require("mongoose");
+```
+
+## Connection to Database
+
+To connect mongoose to your database `test`, you have to use the following commands :
+
+```js
+
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser: true});
+``` 
 
 ## Schema
 
 Schema is the specification according to which data object is created in Database.
 
-Task Schema which contains `title`, `status`, `date` fields. So every task object saved in database will have these 3 fields according to Schema given
+`taskSchema` which contains `title`, `status`, `date` fields. So every task object saved in database will have these 3 fields according to Schema given
 
 
 ```js
 
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-var taskSchema = new Schema({
+const taskSchema = new Schema({
     title:  String,
     status: Boolean,
     date: { type: Date, default: Date.now }    
   });
 ```
 
-Many types of data are allowed in Mongoose Schema mainly :
-
-The permitted SchemaTypes are:
+Many types of data are allowed in Mongoose Schema. The common SchemaTypes are:
 
 * String
 * Number
@@ -39,7 +59,7 @@ The permitted SchemaTypes are:
 
 You can put a lot of conditions inside the Schema object :
 
-```js
+```json
 
     age: { type: Number, default:18, min: 18, max: 65, required :true }
     // default value of Number is 18 and should be between 18-65, and can't be null or empty
@@ -52,25 +72,32 @@ Model are similar to classes, they create a Class from Schema. These classes(i.e
 
 
 ```js
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-var taskSchema = new Schema({
+const taskSchema = new Schema({
     title:  String,
     status:Boolean,
     date: { type: Date, default: Date.now },    
   });
   
-var Task = mongoose.model('Task', taskSchema);  //Task Model to create new database objects for `tasks` Collection
+const Task = mongoose.model('Task', taskSchema);  //Task Model to create new database objects for `tasks` Collection
 
 
 ```
+
+### Lab Task 1
+
+Connect mongoose to a database named `todolist` if you don't have a database with this name. Mongoose will create it after you perform any insert operation.
+
+Creata a Schema named `taskSchema` and model named `Task` as shown above.
+
 
 ## CRUD in Mongoose
 
 ### Create - new objects
 
-To Create new obejct in database we can use `new` keyword and create a object from Model. We can use `save()` function to save the object in database. Unless, you call save function - the object remains in memory. If you collection not yet created in MongoDB, it will created with name of Model plularized (e.g Task will make a collection named `tasks`)
+To Create new obejct in database we can use `new` keyword and create an object from Model. We can use `save()` function to save the object in database. Unless, you call save function - the object remains in memory. If your collection not yet created in MongoDB, it will created with name of Model pluralized (e.g Task will make a collection named `tasks`)
 
 
 ```js
@@ -86,6 +113,12 @@ server.post("/task",function(req,res){
 })
 
 ```
+
+### Lab Task 1
+Create a database 
+You have to create an API Endpoint named `task`
+
+
 
 
 ### Read objects
@@ -115,7 +148,7 @@ server.get("/tasks",function(req,res){
 
 ### Update - existing objects
 
-To Update existing obejct in database we need to first find an object from database and then update in database. This might be considered as a combination of `find` and `save` methods.
+To Update an existing object in database we need to first find an object from database and then update in database. This might be considered as a combination of `find` and `save` methods.
 
 
 There are generally 2 cases in update :
@@ -150,7 +183,7 @@ server.put("/task/:name",function(req,res){
 
 ### Delete - existing objects
 
-To Delete existing obejct in database we need to first find an object from database and then delete. This might be considered as a combination of `find` and `remove` methods.
+To Delete existing obejct from database we need to first find an object from database and then delete. This might be considered as a combination of `find` and `remove` methods.
 
 
 ```js
@@ -162,3 +195,4 @@ server.delete("/task/:name",function(req,res){
 })
 
 ```
+

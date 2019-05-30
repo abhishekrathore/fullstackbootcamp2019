@@ -102,7 +102,7 @@ Use these commands on terminal/CMD (not inside mongo client)
 
 
 
-## Using MONGODB NODE.JS DRIVER  [OPTIONAL READING]
+## Using MONGODB NODE.JS DRIVER  [ OPTIONAL READING ]
 
 To install MONGODB NODE.JS DRIVER use this command
 
