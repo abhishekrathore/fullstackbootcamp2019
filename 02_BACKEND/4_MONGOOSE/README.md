@@ -28,6 +28,8 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser: true});
 ``` 
 
+Connection can also be stored in a variable to check whether it is connected properly or not. Also to disconnect database later on. You can read more details [Here](https://mongoosejs.com/docs/connections.html)
+
 ## Schema
 
 Schema is the specification according to which data object is created in Database.
@@ -65,6 +67,8 @@ You can put a lot of conditions inside the Schema object :
     // default value of Number is 18 and should be between 18-65, and can't be null or empty
 
 ```
+
+Detailed information on SchemaTypes is [Here](https://mongoosejs.com/docs/schematypes.html)
 
 ## Model
 
@@ -266,3 +270,8 @@ res.json(task);
 ```
 
 Check using any tool that the record is deleted or not.
+
+
+## Additional Resources
+
+Queries in Mongoose : [Link](https://mongoosejs.com/docs/queries.html)
