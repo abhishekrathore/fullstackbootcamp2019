@@ -377,4 +377,11 @@ Make an advanced interface for creating memes! Allow the user to upload an image
 Example : [Check this](https://github.com/skidding/flatris)
 
 
+## 27. Break Journey App
 
+It is easy to make travel booking for direct journey from one city to another. But in case you don't find direct flights, trains etc. You might have to break the journey and find trains from a intermediate station and change from their to get to end destination.
+
+- User will provide start and end destination
+- User will provide a intermediate city from where they can change.
+- Interface will provide the connecting journey options on same date.
+- Care must be taken in timings of arrival and departure - so that one can continue the journey.
