@@ -302,3 +302,79 @@ When you visit a restaurant you have to book a table for people. If you book in 
 - set timing for reminder - a day before, an hour before etc.
 - get train running live status by API
 
+## 20. Blog Application
+
+- Login
+- Create a new blog - image, title, text content (rich text containing HTML based content)
+- Use can see list of their own blogs and can delete any old blog.
+- Show list of blogs in home page with card format.
+- You can see your blogs and everyone else blog on home page
+- Sort blogs by author, date created etc.
+- Create category of blogs and classify blogs under a catgeory.
+- Create option to share blog via social media.
+- Create like feature for blog. A use can one like once for same blog.
+
+
+## 21. Notes Application
+
+- User can login
+- Make a note making application similar to Google Keep.
+- User can make a board in which they can add some notes. Boards are like study, watch, books etc.
+- User can make text notes, add images and files attachements also.
+- User can change card color according to priority of tasks (Red, yellow, green)
+- User can update and delete cards.
+- User can search cards with text search.
+
+## 22. Currency Converter App
+
+- Show a list of top currencies and countries sorted by their value for today.
+- List of countries will be displayed with their flag icons. [Example UI Link](https://play.google.com/store/apps/details?id=com.easy.currency.extra.androary&hl=en)
+- There should be two input "Current Currency" and "Exchange Currency". e.g Current Currecy as "INR" and Exchange Currency as "USD".
+- Automatic conversion should be done on change of any change in Dropdown menus.
+- You can reverse the currency options by simple click.
+- Application should store old conversion records and create a simple list of it.
+
+
+## 23. Appointment booking app
+
+Appointment book app creates and event in which you can book slots. It can help a professional like doctor, interviewer to provide slots to other person in which they can visit. Calendly site is a good example of such an app
+
+- User can login 
+- Creates an event with name / description/ Date. Start and endtime.
+- User chooses how long will be slots between start and end time. (10 mins).
+- Final user saves the event setting and gets a URL.
+- User shares the URL with all non logged in users.
+- These user can only see Name of the event, date, start time/endtime and available slots.
+- User books a slot by passing his email, name information.
+- If a slot is booked that will be removed from available slot list and other users will not be able to book the same slot.
+- If all slots are booked, users will be shown a message that no slot is available.
+
+## 24. News application.
+
+This news application will be something similar to google news and will pull news from major news channels and apis.
+
+- News will be categoriesed according to tags  India, sports, world, movies etc.
+- News can be bookmarked by user for later reading.
+- User can search new according to their keywords.
+- Database will store old news items and they will also be searchable.
+- News will be sorted according to new to old.
+
+## 25. Meme Genrator App
+
+Make an advanced interface for creating memes! Allow the user to upload an image, write a caption, and build a meme with the Imgflip api. To take it to the next level, allow the user to share their meme on Twitter, Facebook, and other social platforms.
+
+- User should upload a image of some restricted dimension (max width fixed)
+- User can provide some caption to the image.
+- Captions can be changed in font-size, font-color and orientation.
+- Also one can move captions up or down in the image.
+- Finally user can generate the meme and get a final URL.
+- User can share the URL to other friends to show the meme.
+- As an extra feature one can provide download image feature to user.
+
+
+## 26. Tetris Game
+
+Example : [Check this](https://github.com/skidding/flatris)
+
+
+
