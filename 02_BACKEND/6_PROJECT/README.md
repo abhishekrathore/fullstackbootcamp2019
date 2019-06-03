@@ -1,5 +1,5 @@
 
-# Project
+# Projects
 
 ## 1. Resume/Profile Create Web application
 
