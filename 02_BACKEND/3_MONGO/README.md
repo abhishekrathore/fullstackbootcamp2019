@@ -85,7 +85,7 @@ Above command takes backup of database `accounts` and stores into a directory na
 
 ```bash
 
-mongorestore --db accounts dump/
+mongorestore --db accounts dump/accounts
 
 ```
 

@@ -26,11 +26,11 @@ var name = "sachin";      //String
 var retired = true;      //Boolean
 
 
-console.log(number);
+console.log(score);
 console.log(average);
 console.log(name);
 console.log(retired);
-console.log(number,average,name);  // Multiple console logs can be done using commas
+console.log(score,average,name);  // Multiple console logs can be done using commas
 
 ```
 
