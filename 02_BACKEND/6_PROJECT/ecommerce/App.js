@@ -88,8 +88,9 @@ class App extends React.Component{
         </Menu.Item>
         </Menu>
     
-      <Route path="/" exact render={()=><Products db={this.state.db} addProduct={this.addProductToCart.bind(this)}  pageChanged={this.pageChanged.bind(this)}></Products>}/>
-      <Route path="/cart" render={()=><Cart db={this.state.db} changeQuantity={this.changeQuantity.bind(this)}></Cart>}/>
+        <Route path="/" exact render={props=><Products  {...props} db={this.state.db} addProduct={this.addProductToCart.bind(this)}  pageChanged={this.pageChanged.bind(this)}></Products>}/>
+      <Route path="/cart" render={props=><Cart {...props} db={this.state.db} changeQuantity={this.changeQuantity.bind(this)}></Cart>}/>
+
     </Router>
     </div>
      
