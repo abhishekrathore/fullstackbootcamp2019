@@ -39,11 +39,6 @@ We can use Firebase Cloud services with React applications for purpose of Authen
 
 ![Image 8](./images/8.png)
 
-10. Also don't forget to save support email in `project setting`. Else you will get an error in Login.
-
-![Image 9](./images/9.png)
-
-
 
 ```js
   var firebaseConfig = {
@@ -59,6 +54,14 @@ We can use Firebase Cloud services with React applications for purpose of Authen
   firebase.initializeApp(firebaseConfig);
 
 ```
+
+10. Also don't forget to save support email in `project setting`. Else you will get an error in Login.
+
+![Image 9](./images/9.png)
+
+
+
+
 
 ## Using Firebase in React App
 
