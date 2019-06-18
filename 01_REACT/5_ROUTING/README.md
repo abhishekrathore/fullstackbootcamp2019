@@ -61,7 +61,7 @@ Route is the conditional section which runs only when `path` matches the URL in 
 
 ### Link
 
-Link is equivalent of <a href=""> in html. It takes you from one URL (or path) to another. Whenver you click on a Link it will change the current path.
+Link is equivalent of `<a href="">` in html. It takes you from one URL (or path) to another. Whenver you click on a Link it will change the current path.
 
 
 
