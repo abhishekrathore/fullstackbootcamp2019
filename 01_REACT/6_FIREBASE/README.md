@@ -156,3 +156,36 @@ In case of successful sign-in `.then()` will be called , you will get user info 
       console.log(user.displayName,user.email);
 ```
 In case of error in sign-in `.catch()` will be called, you will get error info inside error variable
+
+
+For log out you can create a similar function :
+
+```js
+
+logout(){
+    firebase.auth().signOut().then(function() {
+    // Sign-out successful.
+    }).catch(function(error) {
+    // An error happened.
+    });
+}
+
+```
+
+
+For checking if user is already signed in (session is maintained) :
+
+```js
+
+checkLogin(){
+   firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+  } else {
+    // No user is signed in.
+  }
+});
+
+```
+
+You can use above function to `redirect` user directly from login page to inside application - if user was already logged in. You will generally call this function on ComponentMount or route change events.
