@@ -185,6 +185,7 @@ checkLogin(){
     // No user is signed in.
   }
 });
+}
 
 ```
 
