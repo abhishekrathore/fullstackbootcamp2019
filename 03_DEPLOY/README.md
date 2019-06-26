@@ -4,7 +4,7 @@
 ## Before Starting Deployment - Check Application Locally
 
 
-1. If you have react application ready to be built - check if you have refereneces of server as `http://localhost:8080/tasks` or something similar. As you will now move react app to Node Server you don't need to mention the server address. So replace `http://localhost:8080/tasks` with onlu `\tasks`. Search your project and remove all such references.
+1. If you have react application ready to be built - check if you have refereneces of server as `http://localhost:8080/tasks` or something similar. As you will now move react app to Node Server you don't need to mention the server address. So replace `http://localhost:8080/tasks` with only `/tasks`. Search your project and remove all such references.
 
 2. Use `npm run build` command to build the react application. You will get the output in `build` directory.
 
@@ -18,6 +18,48 @@ server.use(express.static('build'));
 5. Run you server locally to check you can access the react app on `localhost` using server port number. And everything is running fine.
 
 6. Please check that you should not have a GET API with `/` path. Else it can interfere with static files.
+
+
+## Using MongoDB Atlas Cloud Server
+
+We will use mongoDB Atlas server free version to make our cloud database server. Signup for free ATLAS server and follow the steps to create your first server.
+
+1. Build your first Cluster. You can name it anything you like.
+2. Create a database user - username/password. This will be required later when you will connect your node.js server to MongoDB Atlas.
+3. Whitelist your IP address. Here choose the option of `allow access from anywhere`. This  will add `0.0.0.0/0` to access list.
+4. Connect to cluster using - a connection string which you will get on clicking the `connect` button. Choose option `Connect to your application`
+5. Copy the URL. An example will look like this :
+
+```bash
+mongodb+srv://youstart:<password>@todo-0i5tp.mongodb.net/test?retryWrites=true&w=majority
+```
+6. In above URL `youstart` is the username. Replace `<password>` with your password which you have given in step 2.Also remove the path after `/`.
+7. Finally you will get a URL similar to this :
+
+```bash
+mongodb+srv://youstart:mypassword@todo-0i5tp.mongodb.net
+```
+8. Use this password and change your `mongoose.connect` command in node server as following (here DB name is `test`) :
+
+```js
+mongoose
+  .connect(
+    "mongodb+srv://youstart:mypassword@todo-0i5tp.mongodb.net",{dbName:'test'} // Change test to name of your DB
+  )
+  .then(() => {
+    console.log("Connected to database!");
+  })
+  .catch((error) => {
+    console.log("Connection failed!");
+    console.log(error);
+  });
+
+```  
+
+9. Go to MongoDB Atlas web panel and check whether you can see the new `database`, `collection` and `documents`.
+
+10. Finally, if your application is now working properly with ATLAS we are ready to deploy it on `heroku` server.
+
 
 
 
