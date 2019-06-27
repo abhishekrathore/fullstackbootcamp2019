@@ -67,7 +67,7 @@ mongoose
 
 1. Change PORT number from static values like `8080` to `process.env.PORT`. This will let Heroku server assign a new PORT to your application according to port availability.
 
-2. Install Heroku Command Line. ![Download Page](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
+2. Install Heroku Command Line. [Download Page](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
 
 3. Use `heroku login` command to login into your heroku account which you have created earlier. If you have not created a heroku account - go to heroku.com and create one.
 
