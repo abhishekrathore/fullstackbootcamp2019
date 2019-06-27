@@ -1,14 +1,18 @@
 # Youstart Summer Bootcamp 2019 - Full Stack (MERN Stack)
 
-## Join Facebook Community of our Members for Discussions and Opportunities
+## Join Facebook Community of our Members for Discussions and Opportunities ✌️✌️✌️✌️
 
 * [YouStarter Community](https://www.facebook.com/groups/youstartlabs/)
 
 
-## Completed Projects
+## Completed Projects  🚀 🚀 🚀 🚀 
 
 
 1. Pomodoro App (Yash Mathur) : [Link](https://pomodorerspoint.herokuapp.com/)
+2. PhotoGram App (Anurag) : [Link](https://stark-beach-19846.herokuapp.com/)
+3. Music Search Engine (Tanay Toshniwal) : [Link](https://musicsearch-77514.firebaseapp.com/)
+4. Medical Diagnosis App (Tanay Toshniwal/Ritvik Jain) : [Link](https://github.com/TheDevCorp/OnlineDiagnosis)
+
 
 
 
