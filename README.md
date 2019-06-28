@@ -14,6 +14,7 @@
 4. Medical Diagnosis App (Tanay Toshniwal/Ritvik Jain) : [Link](https://github.com/TheDevCorp/OnlineDiagnosis)
 5. Job Search App (Ritvik Jain) : [Link](https://github.com/Ritvikjain/Job-Search-Webapp)
 6. Slack Chat Application (Pranjul Gupta): [Link](https://react-slack-clone-29e77.firebaseapp.com)
+7. Chat App (Tapesh Kumar and vinayak Mangal) : [Link](https://chat-945.web.app/)
 
 
 
