@@ -19,7 +19,7 @@ server.use(express.static('build'));
 
 6. Please check that you should not have a GET API with `/` path. Else it can interfere with static files.
 
-7. Update the API path by adding wildcard API path after all APIs in your server. Before this require this path using `const path = require("path")`
+7. Update the API path by adding wildcard API path after all APIs in your server. Before this require `path` using `const path = require("path")`
 
 ```js
 
