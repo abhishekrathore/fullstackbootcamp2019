@@ -15,7 +15,7 @@
 5. Job Search App (Ritvik Jain) : [Link](https://github.com/Ritvikjain/Job-Search-Webapp)
 6. Slack Chat Application (Pranjul Gupta): [Link](https://react-slack-clone-29e77.firebaseapp.com)
 7. Chat App (Tapesh Kumar and vinayak Mangal) : [Link](https://chat-945.web.app/)
-
+8. Table Booking App (Milanpreet Singh / Mukul Goyal) : [Link](http://rocky-shore-45169.herokuapp.com/)
 
 
 
