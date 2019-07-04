@@ -12,12 +12,24 @@
 2. PhotoGram App (Anurag) : [Link](https://stark-beach-19846.herokuapp.com/)
 3. Music Search Engine (Tanay Toshniwal) : [Link](https://musicsearch-77514.firebaseapp.com/)
 4. Medical Diagnosis App (Tanay Toshniwal/Ritvik Jain) : [Link](https://github.com/TheDevCorp/OnlineDiagnosis)
-5. Job Search App (Ritvik Jain) : [Link](https://github.com/Ritvikjain/Job-Search-Webapp)
+5. Job Search App (Ritvik Jain) : [Link](https://jobsearch-1601d.firebaseapp.com/)
 6. Slack Chat Application (Pranjul Gupta): [Link](https://react-slack-clone-29e77.firebaseapp.com)
 7. Chat App (Tapesh Kumar and vinayak Mangal) : [Link](https://chat-945.web.app/)
 8. Table Booking App (Milanpreet Singh / Mukul Goyal) : [Link](http://rocky-shore-45169.herokuapp.com/)
-
-
+9. College Adda (Sourabh Agarwal /Pratiksha ): [Link](http://collegeadda.herokuapp.com/)
+10. Voting App (Keyur Jain / Lakshya Doshi) : [Link](https://murmuring-beyond-16823.herokuapp.com/)
+11. Jewelery E-Commerce (Harsh Nabers): [Link](https://rocky-tor-82982.herokuapp.com/)
+12. Buy/Sell App (Himanshu Modi/ Pratik Bansal): [Link](https://blooming-wave-88683.herokuapp.com/)
+13. Restaurant Booking System (Vibha Sharma/Preeti Agrawal) : [Link](https://whispering-oasis-54624.herokuapp.com/)
+14. E-commerce App for clothes (Vanisha Arora /Yash Laddha) : [Link](https://salty-citadel-71403.herokuapp.com)
+15. Resume Maker Application (Kunal Kaushik/Vishesh Goshwami) : [Link](https://warm-cove-61946.herokuapp.com/)
+16. Quiz Application (Shivam Gupta/ Shyam Murari) : [Link](https://polar-retreat-64257.herokuapp.com/) 
+17. Ecommerce Application (Sitaram Chaudhary/ Vikas Prajapat) : [Link](https://apologetic-loon-31826.herokuapp.com/)
+18. Pomodoro App(Prateek Navalakha/Shubham Baheti): [Link](https://enigmatic-citadel-71725.herokuapp.com/)
+19. Photogram App (Nikhil/Vikas) : [Link](https://enigmatic-retreat-56279.herokuapp.com)
+20. Photogram App (Shivam Soni): [Link](https://lit-shelf-28896.herokuapp.com/)
+21. Buy and Sell App (Rahul Kumhar): [Link](https://sellandbuy-719fa.firebaseapp.com)
+22. New App (Pragati Gemavat): [Link](https://newshunt-9a0ed.firebaseapp.com)
 
 ## Basics of HTML/CSS/JS and Certification
 
