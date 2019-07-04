@@ -29,7 +29,7 @@
 19. Photogram App (Nikhil/Vikas) : [Link](https://enigmatic-retreat-56279.herokuapp.com)
 20. Photogram App (Shivam Soni): [Link](https://lit-shelf-28896.herokuapp.com/)
 21. Buy and Sell App (Rahul Kumhar): [Link](https://sellandbuy-719fa.firebaseapp.com)
-22. New App (Pragati Gemavat): [Link](https://newshunt-9a0ed.firebaseapp.com)
+22. News App (Pragati Gemavat): [Link](https://newshunt-9a0ed.firebaseapp.com)
 
 ## Basics of HTML/CSS/JS and Certification
 
