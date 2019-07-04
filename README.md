@@ -18,7 +18,7 @@
 8. Table Booking App (Milanpreet Singh / Mukul Goyal) : [Link](http://rocky-shore-45169.herokuapp.com/)
 9. College Adda (Sourabh Agarwal /Pratiksha ): [Link](http://collegeadda.herokuapp.com/)
 10. Voting App (Keyur Jain / Lakshya Doshi) : [Link](https://murmuring-beyond-16823.herokuapp.com/)
-11. Jewelery E-Commerce (Harsh Nabers): [Link](https://rocky-tor-82982.herokuapp.com/)
+11. Jewelery E-Commerce (Harsh Nabera): [Link](https://rocky-tor-82982.herokuapp.com/)
 12. Buy/Sell App (Himanshu Modi/ Pratik Bansal): [Link](https://blooming-wave-88683.herokuapp.com/)
 13. Restaurant Booking System (Vibha Sharma/Preeti Agrawal) : [Link](https://whispering-oasis-54624.herokuapp.com/)
 14. E-commerce App for clothes (Vanisha Arora /Yash Laddha) : [Link](https://salty-citadel-71403.herokuapp.com)
