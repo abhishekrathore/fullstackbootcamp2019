@@ -31,6 +31,7 @@
 21. Buy and Sell App (Rahul Kumhar): [Link](https://sellandbuy-719fa.firebaseapp.com)
 22. News App (Pragati Gemavat): [Link](https://newshunt-9a0ed.firebaseapp.com)
 23. Photogram App ( Aditya Upneja) : [Link](https://boiling-coast-92580.herokuapp.com/)
+24. Quiz App (Prabhat Jain/Mridul Sharma): [Link](https://sheltered-chamber-35430.herokuapp.com)
 
 ## Basics of HTML/CSS/JS and Certification
 
