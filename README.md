@@ -53,6 +53,13 @@
 * Github (Create your Profile)
 * Heroku (Signup)
 
+## WatchList - Full Stack Videos
+
+* Event Loop - How JS callbacks work [Link](https://www.youtube.com/)
+* React Crash Course [Link](https://www.youtube.com/watch?v=Ke90Tje7VS0)
+* React Hooks [Link](https://www.youtube.com/watch?v=G-aO5hzo1aw)
+
+
 
 
 
