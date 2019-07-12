@@ -33,6 +33,7 @@
 23. Photogram App ( Aditya Upneja) : [Link](https://boiling-coast-92580.herokuapp.com/)
 24. Quiz App (Prabhat Jain/Mridul Sharma): [Link](https://sheltered-chamber-35430.herokuapp.com)
 25. NEWS Application (Suvansh Shukla): [Link](https://news-shark.firebaseapp.com/)
+26. Recipe App (Rohit Kucheria): [Link](https://recipe-app-918d6.firebaseapp.com/)
 
 
 ## Basics of HTML/CSS/JS and Certification
