@@ -12,7 +12,7 @@
 * [Full Course Videos](https://www.youtube.com/playlist?list=PL2PkZdv6p7ZnaqcZL7kDJtoIp4NhDy6e4)
 
 
-## Completed Projects (which are Live) 🚀 🚀 🚀 🚀 
+## Completed Projects (Live) 🚀 🚀 🚀 🚀 
 
 TOP Projects can be found on [Enappd.com](https://enappd.com)
 
