@@ -1,12 +1,15 @@
 # Youstart Summer Bootcamp 2019 - Full Stack (MERN Stack)
 
 ## Join Facebook Community of our Members for Opportunities ✌️✌️✌️✌️
-
 * [YouStarter Community](https://www.facebook.com/groups/youstartlabs/)
 
+## Check out YouTube Course Videos ✌️✌️✌️✌️
+* [Full Course Videos](https://www.youtube.com/playlist?list=PL2PkZdv6p7ZnaqcZL7kDJtoIp4NhDy6e4)
 
-## Completed Projects  🚀 🚀 🚀 🚀 
 
+## Completed Projects (which are Live) 🚀 🚀 🚀 🚀 
+
+TOP Projects can be found on [Enappd.com](https://enappd.com)
 
 1. Pomodoro App (Yash Mathur) : [Link](https://pomodorerspoint.herokuapp.com/)
 2. PhotoGram App (Anurag) : [Link](https://stark-beach-19846.herokuapp.com/)
