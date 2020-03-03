@@ -3,7 +3,7 @@
 ## Join Facebook Community of our Members for Opportunities ✌️✌️✌️✌️
 * [YouStarter Community](https://www.facebook.com/groups/youstartlabs/)
 
-## Check out YouTube Course Videos ✌️✌️✌️✌️
+## Check out YouTube Course Videos 📹 📹
 * [Full Course Videos](https://www.youtube.com/playlist?list=PL2PkZdv6p7ZnaqcZL7kDJtoIp4NhDy6e4)
 
 
