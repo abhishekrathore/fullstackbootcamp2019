@@ -1,6 +1,6 @@
 # Youstart Summer Bootcamp 2019 - Full Stack (MERN Stack)
 
-![YouStart Summer Bootcamp, 2019 Batch](http://localhost:4200/assets/2019.jpg)
+![YouStart Summer Bootcamp, 2019 Batch](https://youstart.in/assets/2019.jpg)
 
 
 ## Join Facebook Community of our Members for Opportunities ✌️✌️✌️✌️
